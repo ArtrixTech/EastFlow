@@ -78,6 +78,12 @@
     <Compile Include="Block.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="FlatButton.Designer.vb">
+      <DependentUpon>FlatButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlatButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ShellOperation.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -106,6 +112,9 @@
     <EmbeddedResource Include="Block.resx">
       <DependentUpon>Block.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlatButton.resx">
+      <DependentUpon>FlatButton.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +136,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

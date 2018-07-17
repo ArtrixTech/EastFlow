@@ -1,4 +1,4 @@
-﻿Public Class Block
+﻿Public Class FlatButton
 
     Private __xIndex As Integer = 0
     Private __yIndex As Integer = 0
@@ -21,6 +21,9 @@
        Color.FromArgb(255, 143, 211, 244), Color.FromArgb(255, 251, 237, 150)} ' RGBY
     Private colorIndex = -1
     Private colorIndex_Max = 3
+
+    Private __text = ""
+    Private __font As New Font("Microsoft Yahei UI", 2.8)
 
 
     Sub handleMouseRightClick(sender As Object, e As EventArgs)
@@ -48,59 +51,12 @@
 
     End Sub
 
-    Private Sub Block_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
-
-        If e.Button = Windows.Forms.MouseButtons.Right Then
-            handleMouseRightClick(sender, e)
-        End If
-
-        If e.Button = Windows.Forms.MouseButtons.Left Then
-            handleMouseLeftClick(sender, e)
-        End If
-
-    End Sub
-
-    Private Sub RoundCorner_MouseDown(sender As Object, e As MouseEventArgs) Handles RoundCorner.MouseDown
-
-        If e.Button = Windows.Forms.MouseButtons.Right Then
-            handleMouseRightClick(sender, e)
-        End If
-
-        If e.Button = Windows.Forms.MouseButtons.Left Then
-            handleMouseLeftClick(sender, e)
-        End If
-
-    End Sub
-
-    Private Sub lblCoor_MouseDown(sender As Object, e As MouseEventArgs) Handles lblCoor.MouseDown
-
-        If e.Button = Windows.Forms.MouseButtons.Right Then
-            handleMouseRightClick(sender, e)
-        End If
-
-        If e.Button = Windows.Forms.MouseButtons.Left Then
-            handleMouseLeftClick(sender, e)
-        End If
-
-    End Sub
-
     Private Sub Block_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
         Me.colorChangeDirection = True
         Me.colorChangeTimer.Start()
     End Sub
 
-    Private Sub UserControl1_MouseUnHover(sender As Object, e As EventArgs) Handles Me.MouseLeave
-        Me.colorChangeDirection = False
-        Me.colorChangeTimer.Start()
-    End Sub
-
-    Private Sub RoundCorner_MouseMove(sender As Object, e As MouseEventArgs) Handles RoundCorner.MouseMove
-        Me.colorChangeDirection = True
-        Me.colorChangeTimer.Start()
-    End Sub
-
-
-    Private Sub RoundCorner_MouseUnHover(sender As Object, e As EventArgs) Handles RoundCorner.MouseLeave
+    Private Sub Block_MouseUnHover(sender As Object, e As EventArgs) Handles Me.MouseLeave
         Me.colorChangeDirection = False
         Me.colorChangeTimer.Start()
     End Sub
@@ -109,7 +65,6 @@
         Me.colorChangeDirection = True
         Me.colorChangeTimer.Start()
     End Sub
-
 
     Private Sub lblCoor_MouseUnHover(sender As Object, e As EventArgs) Handles lblCoor.MouseLeave
         Me.colorChangeDirection = False
@@ -135,26 +90,6 @@
         End Set
     End Property
 
-    Public Property xIndex As Integer
-        Get
-            Return Me.__xIndex
-        End Get
-        Set(ByVal value As Integer)
-            Me.__xIndex = value
-            Me.lblCoor.Text = CStr(Me.xIndex) + ", " + CStr(Me.yIndex)
-        End Set
-    End Property
-
-    Public Property yIndex As Integer
-        Get
-            Return Me.__yIndex
-        End Get
-        Set(ByVal value As Integer)
-            Me.__yIndex = value
-            Me.lblCoor.Text = CStr(Me.xIndex) + ", " + CStr(Me.yIndex)
-        End Set
-    End Property
-
     Public Property blockColor As Color
         Get
             Return Me.__blockColor
@@ -163,29 +98,6 @@
             Me.__blockColor = value
             renderColor()
         End Set
-    End Property
-
-    Public Property colorID As Integer
-
-        Get
-            Return Me.colorIndex + 1
-        End Get
-
-        Set(ByVal value As Integer)
-
-            Me.colorIndex = value - 1
-
-
-            If colorID = 0 Then
-                Me.__blockColor = Me.__defaultBackgroundColor
-            ElseIf colorID <= 4 Then
-                Me.__blockColor = Me.colorList(Me.colorIndex)
-            End If
-
-            renderColor()
-
-        End Set
-
     End Property
 
     Private Sub UserControl1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -237,10 +149,24 @@
 
     End Sub
 
-    Sub resetColor()
-        Me.BackColor = Me.__defaultBackgroundColor
-        Me.blockColor = Me.BackColor
-        Me.colorIndex = -1
-    End Sub
+    Public Property LblText As String
+        Get
+            Return Me.__text
+        End Get
+        Set(ByVal value As String)
+            Me.__text = value
+            Me.lblCoor.Text = value
+        End Set
+    End Property
+
+    Public Overrides Property Font As Font
+        Get
+            Return Me.__font
+        End Get
+        Set(ByVal value As Font)
+            Me.__font = value
+            Me.lblCoor.Font = value
+        End Set
+    End Property
 
 End Class

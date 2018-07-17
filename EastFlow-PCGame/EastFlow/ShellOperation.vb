@@ -6,7 +6,6 @@
     Private __inputStream As IO.StreamWriter
     Private __outputStream As IO.StreamReader
 
-
     Private __exe_location As String = "cmd.exe"
     Private __argument As String = ""
 
@@ -49,17 +48,16 @@
 
     End Sub
 
-    Public Sub getOutput()
+    Public Function getOutput()
 
         Me.__process.WaitForExit()
 
         Dim myStreamReader As IO.StreamReader = Me.__process.StandardOutput
         Dim myStr As String = myStreamReader.ReadToEnd
 
-        MessageBox.Show(myStr)
-    End Sub
+        Return myStr
 
-
+    End Function
 
     Private argument As String
     Public Property NewProperty() As String

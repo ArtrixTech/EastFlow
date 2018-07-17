@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Block
+Partial Class FlatButton
     Inherits System.Windows.Forms.UserControl
 
     'UserControl 重写释放以清理组件列表。
@@ -23,46 +23,30 @@ Partial Class Block
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblCoor = New System.Windows.Forms.Label()
-        Me.RoundCorner = New System.Windows.Forms.PictureBox()
-        CType(Me.RoundCorner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCoor
         '
         Me.lblCoor.AutoSize = True
-        Me.lblCoor.Font = New System.Drawing.Font("微软雅黑", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblCoor.Font = New System.Drawing.Font("微软雅黑", 9.0!)
         Me.lblCoor.ForeColor = System.Drawing.Color.Gray
-        Me.lblCoor.Location = New System.Drawing.Point(2, 2)
+        Me.lblCoor.Location = New System.Drawing.Point(6, 6)
         Me.lblCoor.Name = "lblCoor"
-        Me.lblCoor.Size = New System.Drawing.Size(22, 16)
-        Me.lblCoor.TabIndex = 0
-        Me.lblCoor.Text = "0,0"
+        Me.lblCoor.Size = New System.Drawing.Size(46, 17)
+        Me.lblCoor.TabIndex = 1
+        Me.lblCoor.Text = "Button"
         '
-        'RoundCorner
-        '
-        Me.RoundCorner.Image = Global.EastFlow.My.Resources.Resources.未标题_1
-        Me.RoundCorner.Location = New System.Drawing.Point(0, 0)
-        Me.RoundCorner.Name = "RoundCorner"
-        Me.RoundCorner.Size = New System.Drawing.Size(48, 48)
-        Me.RoundCorner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.RoundCorner.TabIndex = 1
-        Me.RoundCorner.TabStop = False
-        '
-        'Block
+        'FlatButton
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.lblCoor)
-        Me.Controls.Add(Me.RoundCorner)
-        Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Name = "Block"
-        Me.Size = New System.Drawing.Size(48, 48)
-        CType(Me.RoundCorner, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Name = "FlatButton"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents lblCoor As Label
-    Friend WithEvents RoundCorner As PictureBox
 End Class

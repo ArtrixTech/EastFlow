@@ -22,9 +22,12 @@ Partial Class Form1
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.FlatButton1 = New EastFlow.FlatButton()
         Me.Block57 = New EastFlow.Block()
         Me.Block58 = New EastFlow.Block()
         Me.Block59 = New EastFlow.Block()
@@ -89,7 +92,11 @@ Partial Class Form1
         Me.Block4 = New EastFlow.Block()
         Me.Block2 = New EastFlow.Block()
         Me.Block1 = New EastFlow.Block()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.FlatButton2 = New EastFlow.FlatButton()
+        Me.LoadTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.FlatButton3 = New EastFlow.FlatButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -124,12 +131,35 @@ Partial Class Form1
         Me.Label3.TabIndex = 66
         Me.Label3.Text = "东流的游戏"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(493, 30)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 67
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'FlatButton1
+        '
+        Me.FlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.FlatButton1.backgroundColorDimmingDuration = 75
+        Me.FlatButton1.backgroundColorDimmingRatio = 0.12R
+        Me.FlatButton1.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.FlatButton1.LblText = "Clear All"
+        Me.FlatButton1.Location = New System.Drawing.Point(493, 82)
+        Me.FlatButton1.Name = "FlatButton1"
+        Me.FlatButton1.Size = New System.Drawing.Size(168, 31)
+        Me.FlatButton1.TabIndex = 68
+        '
         'Block57
         '
-        Me.Block57.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block57.backgroundColorDimmingDuration = 100
-        Me.Block57.backgroundColorDimmingRatio = 0.13R
+        Me.Block57.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block57.backgroundColorDimmingDuration = 75
+        Me.Block57.backgroundColorDimmingRatio = 0.12R
         Me.Block57.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block57.colorID = 0
+        Me.Block57.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block57.Location = New System.Drawing.Point(252, 460)
         Me.Block57.Name = "Block57"
         Me.Block57.Size = New System.Drawing.Size(48, 48)
@@ -139,10 +169,12 @@ Partial Class Form1
         '
         'Block58
         '
-        Me.Block58.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block58.backgroundColorDimmingDuration = 100
-        Me.Block58.backgroundColorDimmingRatio = 0.13R
+        Me.Block58.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block58.backgroundColorDimmingDuration = 75
+        Me.Block58.backgroundColorDimmingRatio = 0.12R
         Me.Block58.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block58.colorID = 0
+        Me.Block58.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block58.Location = New System.Drawing.Point(306, 460)
         Me.Block58.Name = "Block58"
         Me.Block58.Size = New System.Drawing.Size(48, 48)
@@ -152,10 +184,12 @@ Partial Class Form1
         '
         'Block59
         '
-        Me.Block59.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block59.backgroundColorDimmingDuration = 100
-        Me.Block59.backgroundColorDimmingRatio = 0.13R
+        Me.Block59.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block59.backgroundColorDimmingDuration = 75
+        Me.Block59.backgroundColorDimmingRatio = 0.12R
         Me.Block59.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block59.colorID = 0
+        Me.Block59.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block59.Location = New System.Drawing.Point(360, 460)
         Me.Block59.Name = "Block59"
         Me.Block59.Size = New System.Drawing.Size(48, 48)
@@ -165,10 +199,12 @@ Partial Class Form1
         '
         'Block60
         '
-        Me.Block60.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block60.backgroundColorDimmingDuration = 100
-        Me.Block60.backgroundColorDimmingRatio = 0.13R
+        Me.Block60.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block60.backgroundColorDimmingDuration = 75
+        Me.Block60.backgroundColorDimmingRatio = 0.12R
         Me.Block60.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block60.colorID = 0
+        Me.Block60.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block60.Location = New System.Drawing.Point(414, 460)
         Me.Block60.Name = "Block60"
         Me.Block60.Size = New System.Drawing.Size(48, 48)
@@ -178,10 +214,12 @@ Partial Class Form1
         '
         'Block61
         '
-        Me.Block61.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block61.backgroundColorDimmingDuration = 100
-        Me.Block61.backgroundColorDimmingRatio = 0.13R
+        Me.Block61.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block61.backgroundColorDimmingDuration = 75
+        Me.Block61.backgroundColorDimmingRatio = 0.12R
         Me.Block61.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block61.colorID = 0
+        Me.Block61.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block61.Location = New System.Drawing.Point(144, 460)
         Me.Block61.Name = "Block61"
         Me.Block61.Size = New System.Drawing.Size(48, 48)
@@ -191,10 +229,12 @@ Partial Class Form1
         '
         'Block62
         '
-        Me.Block62.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block62.backgroundColorDimmingDuration = 100
-        Me.Block62.backgroundColorDimmingRatio = 0.13R
+        Me.Block62.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block62.backgroundColorDimmingDuration = 75
+        Me.Block62.backgroundColorDimmingRatio = 0.12R
         Me.Block62.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block62.colorID = 0
+        Me.Block62.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block62.Location = New System.Drawing.Point(198, 460)
         Me.Block62.Name = "Block62"
         Me.Block62.Size = New System.Drawing.Size(48, 48)
@@ -204,10 +244,12 @@ Partial Class Form1
         '
         'Block63
         '
-        Me.Block63.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block63.backgroundColorDimmingDuration = 100
-        Me.Block63.backgroundColorDimmingRatio = 0.13R
+        Me.Block63.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block63.backgroundColorDimmingDuration = 75
+        Me.Block63.backgroundColorDimmingRatio = 0.12R
         Me.Block63.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block63.colorID = 0
+        Me.Block63.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block63.Location = New System.Drawing.Point(90, 460)
         Me.Block63.Name = "Block63"
         Me.Block63.Size = New System.Drawing.Size(48, 48)
@@ -217,10 +259,12 @@ Partial Class Form1
         '
         'Block64
         '
-        Me.Block64.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block64.backgroundColorDimmingDuration = 100
-        Me.Block64.backgroundColorDimmingRatio = 0.13R
+        Me.Block64.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block64.backgroundColorDimmingDuration = 75
+        Me.Block64.backgroundColorDimmingRatio = 0.12R
         Me.Block64.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block64.colorID = 0
+        Me.Block64.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block64.Location = New System.Drawing.Point(36, 460)
         Me.Block64.Name = "Block64"
         Me.Block64.Size = New System.Drawing.Size(48, 48)
@@ -230,10 +274,12 @@ Partial Class Form1
         '
         'Block49
         '
-        Me.Block49.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block49.backgroundColorDimmingDuration = 100
-        Me.Block49.backgroundColorDimmingRatio = 0.13R
+        Me.Block49.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block49.backgroundColorDimmingDuration = 75
+        Me.Block49.backgroundColorDimmingRatio = 0.12R
         Me.Block49.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block49.colorID = 0
+        Me.Block49.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block49.Location = New System.Drawing.Point(252, 406)
         Me.Block49.Name = "Block49"
         Me.Block49.Size = New System.Drawing.Size(48, 48)
@@ -243,10 +289,12 @@ Partial Class Form1
         '
         'Block50
         '
-        Me.Block50.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block50.backgroundColorDimmingDuration = 100
-        Me.Block50.backgroundColorDimmingRatio = 0.13R
+        Me.Block50.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block50.backgroundColorDimmingDuration = 75
+        Me.Block50.backgroundColorDimmingRatio = 0.12R
         Me.Block50.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block50.colorID = 0
+        Me.Block50.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block50.Location = New System.Drawing.Point(306, 406)
         Me.Block50.Name = "Block50"
         Me.Block50.Size = New System.Drawing.Size(48, 48)
@@ -256,10 +304,12 @@ Partial Class Form1
         '
         'Block51
         '
-        Me.Block51.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block51.backgroundColorDimmingDuration = 100
-        Me.Block51.backgroundColorDimmingRatio = 0.13R
+        Me.Block51.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block51.backgroundColorDimmingDuration = 75
+        Me.Block51.backgroundColorDimmingRatio = 0.12R
         Me.Block51.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block51.colorID = 0
+        Me.Block51.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block51.Location = New System.Drawing.Point(360, 406)
         Me.Block51.Name = "Block51"
         Me.Block51.Size = New System.Drawing.Size(48, 48)
@@ -269,10 +319,12 @@ Partial Class Form1
         '
         'Block52
         '
-        Me.Block52.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block52.backgroundColorDimmingDuration = 100
-        Me.Block52.backgroundColorDimmingRatio = 0.13R
+        Me.Block52.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block52.backgroundColorDimmingDuration = 75
+        Me.Block52.backgroundColorDimmingRatio = 0.12R
         Me.Block52.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block52.colorID = 0
+        Me.Block52.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block52.Location = New System.Drawing.Point(414, 406)
         Me.Block52.Name = "Block52"
         Me.Block52.Size = New System.Drawing.Size(48, 48)
@@ -282,10 +334,12 @@ Partial Class Form1
         '
         'Block53
         '
-        Me.Block53.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block53.backgroundColorDimmingDuration = 100
-        Me.Block53.backgroundColorDimmingRatio = 0.13R
+        Me.Block53.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block53.backgroundColorDimmingDuration = 75
+        Me.Block53.backgroundColorDimmingRatio = 0.12R
         Me.Block53.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block53.colorID = 0
+        Me.Block53.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block53.Location = New System.Drawing.Point(144, 406)
         Me.Block53.Name = "Block53"
         Me.Block53.Size = New System.Drawing.Size(48, 48)
@@ -295,10 +349,12 @@ Partial Class Form1
         '
         'Block54
         '
-        Me.Block54.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block54.backgroundColorDimmingDuration = 100
-        Me.Block54.backgroundColorDimmingRatio = 0.13R
+        Me.Block54.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block54.backgroundColorDimmingDuration = 75
+        Me.Block54.backgroundColorDimmingRatio = 0.12R
         Me.Block54.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block54.colorID = 0
+        Me.Block54.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block54.Location = New System.Drawing.Point(198, 406)
         Me.Block54.Name = "Block54"
         Me.Block54.Size = New System.Drawing.Size(48, 48)
@@ -308,10 +364,12 @@ Partial Class Form1
         '
         'Block55
         '
-        Me.Block55.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block55.backgroundColorDimmingDuration = 100
-        Me.Block55.backgroundColorDimmingRatio = 0.13R
+        Me.Block55.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block55.backgroundColorDimmingDuration = 75
+        Me.Block55.backgroundColorDimmingRatio = 0.12R
         Me.Block55.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block55.colorID = 0
+        Me.Block55.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block55.Location = New System.Drawing.Point(90, 406)
         Me.Block55.Name = "Block55"
         Me.Block55.Size = New System.Drawing.Size(48, 48)
@@ -321,10 +379,12 @@ Partial Class Form1
         '
         'Block56
         '
-        Me.Block56.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block56.backgroundColorDimmingDuration = 100
-        Me.Block56.backgroundColorDimmingRatio = 0.13R
+        Me.Block56.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block56.backgroundColorDimmingDuration = 75
+        Me.Block56.backgroundColorDimmingRatio = 0.12R
         Me.Block56.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block56.colorID = 0
+        Me.Block56.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block56.Location = New System.Drawing.Point(36, 406)
         Me.Block56.Name = "Block56"
         Me.Block56.Size = New System.Drawing.Size(48, 48)
@@ -334,10 +394,12 @@ Partial Class Form1
         '
         'Block41
         '
-        Me.Block41.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block41.backgroundColorDimmingDuration = 100
-        Me.Block41.backgroundColorDimmingRatio = 0.13R
+        Me.Block41.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block41.backgroundColorDimmingDuration = 75
+        Me.Block41.backgroundColorDimmingRatio = 0.12R
         Me.Block41.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block41.colorID = 0
+        Me.Block41.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block41.Location = New System.Drawing.Point(252, 352)
         Me.Block41.Name = "Block41"
         Me.Block41.Size = New System.Drawing.Size(48, 48)
@@ -347,10 +409,12 @@ Partial Class Form1
         '
         'Block42
         '
-        Me.Block42.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block42.backgroundColorDimmingDuration = 100
-        Me.Block42.backgroundColorDimmingRatio = 0.13R
+        Me.Block42.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block42.backgroundColorDimmingDuration = 75
+        Me.Block42.backgroundColorDimmingRatio = 0.12R
         Me.Block42.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block42.colorID = 0
+        Me.Block42.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block42.Location = New System.Drawing.Point(306, 352)
         Me.Block42.Name = "Block42"
         Me.Block42.Size = New System.Drawing.Size(48, 48)
@@ -360,10 +424,12 @@ Partial Class Form1
         '
         'Block43
         '
-        Me.Block43.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block43.backgroundColorDimmingDuration = 100
-        Me.Block43.backgroundColorDimmingRatio = 0.13R
+        Me.Block43.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block43.backgroundColorDimmingDuration = 75
+        Me.Block43.backgroundColorDimmingRatio = 0.12R
         Me.Block43.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block43.colorID = 0
+        Me.Block43.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block43.Location = New System.Drawing.Point(360, 352)
         Me.Block43.Name = "Block43"
         Me.Block43.Size = New System.Drawing.Size(48, 48)
@@ -373,10 +439,12 @@ Partial Class Form1
         '
         'Block44
         '
-        Me.Block44.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block44.backgroundColorDimmingDuration = 100
-        Me.Block44.backgroundColorDimmingRatio = 0.13R
+        Me.Block44.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block44.backgroundColorDimmingDuration = 75
+        Me.Block44.backgroundColorDimmingRatio = 0.12R
         Me.Block44.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block44.colorID = 0
+        Me.Block44.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block44.Location = New System.Drawing.Point(414, 352)
         Me.Block44.Name = "Block44"
         Me.Block44.Size = New System.Drawing.Size(48, 48)
@@ -386,10 +454,12 @@ Partial Class Form1
         '
         'Block45
         '
-        Me.Block45.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block45.backgroundColorDimmingDuration = 100
-        Me.Block45.backgroundColorDimmingRatio = 0.13R
+        Me.Block45.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block45.backgroundColorDimmingDuration = 75
+        Me.Block45.backgroundColorDimmingRatio = 0.12R
         Me.Block45.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block45.colorID = 0
+        Me.Block45.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block45.Location = New System.Drawing.Point(144, 352)
         Me.Block45.Name = "Block45"
         Me.Block45.Size = New System.Drawing.Size(48, 48)
@@ -399,10 +469,12 @@ Partial Class Form1
         '
         'Block46
         '
-        Me.Block46.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block46.backgroundColorDimmingDuration = 100
-        Me.Block46.backgroundColorDimmingRatio = 0.13R
+        Me.Block46.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block46.backgroundColorDimmingDuration = 75
+        Me.Block46.backgroundColorDimmingRatio = 0.12R
         Me.Block46.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block46.colorID = 0
+        Me.Block46.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block46.Location = New System.Drawing.Point(198, 352)
         Me.Block46.Name = "Block46"
         Me.Block46.Size = New System.Drawing.Size(48, 48)
@@ -412,10 +484,12 @@ Partial Class Form1
         '
         'Block47
         '
-        Me.Block47.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block47.backgroundColorDimmingDuration = 100
-        Me.Block47.backgroundColorDimmingRatio = 0.13R
+        Me.Block47.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block47.backgroundColorDimmingDuration = 75
+        Me.Block47.backgroundColorDimmingRatio = 0.12R
         Me.Block47.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block47.colorID = 0
+        Me.Block47.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block47.Location = New System.Drawing.Point(90, 352)
         Me.Block47.Name = "Block47"
         Me.Block47.Size = New System.Drawing.Size(48, 48)
@@ -425,10 +499,12 @@ Partial Class Form1
         '
         'Block48
         '
-        Me.Block48.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block48.backgroundColorDimmingDuration = 100
-        Me.Block48.backgroundColorDimmingRatio = 0.13R
+        Me.Block48.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block48.backgroundColorDimmingDuration = 75
+        Me.Block48.backgroundColorDimmingRatio = 0.12R
         Me.Block48.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block48.colorID = 0
+        Me.Block48.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block48.Location = New System.Drawing.Point(36, 352)
         Me.Block48.Name = "Block48"
         Me.Block48.Size = New System.Drawing.Size(48, 48)
@@ -438,10 +514,12 @@ Partial Class Form1
         '
         'Block33
         '
-        Me.Block33.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block33.backgroundColorDimmingDuration = 100
-        Me.Block33.backgroundColorDimmingRatio = 0.13R
+        Me.Block33.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block33.backgroundColorDimmingDuration = 75
+        Me.Block33.backgroundColorDimmingRatio = 0.12R
         Me.Block33.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block33.colorID = 0
+        Me.Block33.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block33.Location = New System.Drawing.Point(252, 298)
         Me.Block33.Name = "Block33"
         Me.Block33.Size = New System.Drawing.Size(48, 48)
@@ -451,10 +529,12 @@ Partial Class Form1
         '
         'Block34
         '
-        Me.Block34.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block34.backgroundColorDimmingDuration = 100
-        Me.Block34.backgroundColorDimmingRatio = 0.13R
+        Me.Block34.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block34.backgroundColorDimmingDuration = 75
+        Me.Block34.backgroundColorDimmingRatio = 0.12R
         Me.Block34.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block34.colorID = 0
+        Me.Block34.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block34.Location = New System.Drawing.Point(306, 298)
         Me.Block34.Name = "Block34"
         Me.Block34.Size = New System.Drawing.Size(48, 48)
@@ -464,10 +544,12 @@ Partial Class Form1
         '
         'Block35
         '
-        Me.Block35.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block35.backgroundColorDimmingDuration = 100
-        Me.Block35.backgroundColorDimmingRatio = 0.13R
+        Me.Block35.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block35.backgroundColorDimmingDuration = 75
+        Me.Block35.backgroundColorDimmingRatio = 0.12R
         Me.Block35.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block35.colorID = 0
+        Me.Block35.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block35.Location = New System.Drawing.Point(360, 298)
         Me.Block35.Name = "Block35"
         Me.Block35.Size = New System.Drawing.Size(48, 48)
@@ -477,10 +559,12 @@ Partial Class Form1
         '
         'Block36
         '
-        Me.Block36.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block36.backgroundColorDimmingDuration = 100
-        Me.Block36.backgroundColorDimmingRatio = 0.13R
+        Me.Block36.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block36.backgroundColorDimmingDuration = 75
+        Me.Block36.backgroundColorDimmingRatio = 0.12R
         Me.Block36.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block36.colorID = 0
+        Me.Block36.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block36.Location = New System.Drawing.Point(414, 298)
         Me.Block36.Name = "Block36"
         Me.Block36.Size = New System.Drawing.Size(48, 48)
@@ -490,10 +574,12 @@ Partial Class Form1
         '
         'Block37
         '
-        Me.Block37.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block37.backgroundColorDimmingDuration = 100
-        Me.Block37.backgroundColorDimmingRatio = 0.13R
+        Me.Block37.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block37.backgroundColorDimmingDuration = 75
+        Me.Block37.backgroundColorDimmingRatio = 0.12R
         Me.Block37.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block37.colorID = 0
+        Me.Block37.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block37.Location = New System.Drawing.Point(144, 298)
         Me.Block37.Name = "Block37"
         Me.Block37.Size = New System.Drawing.Size(48, 48)
@@ -503,10 +589,12 @@ Partial Class Form1
         '
         'Block38
         '
-        Me.Block38.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block38.backgroundColorDimmingDuration = 100
-        Me.Block38.backgroundColorDimmingRatio = 0.13R
+        Me.Block38.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block38.backgroundColorDimmingDuration = 75
+        Me.Block38.backgroundColorDimmingRatio = 0.12R
         Me.Block38.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block38.colorID = 0
+        Me.Block38.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block38.Location = New System.Drawing.Point(198, 298)
         Me.Block38.Name = "Block38"
         Me.Block38.Size = New System.Drawing.Size(48, 48)
@@ -516,10 +604,12 @@ Partial Class Form1
         '
         'Block39
         '
-        Me.Block39.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block39.backgroundColorDimmingDuration = 100
-        Me.Block39.backgroundColorDimmingRatio = 0.13R
+        Me.Block39.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block39.backgroundColorDimmingDuration = 75
+        Me.Block39.backgroundColorDimmingRatio = 0.12R
         Me.Block39.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block39.colorID = 0
+        Me.Block39.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block39.Location = New System.Drawing.Point(90, 298)
         Me.Block39.Name = "Block39"
         Me.Block39.Size = New System.Drawing.Size(48, 48)
@@ -529,10 +619,12 @@ Partial Class Form1
         '
         'Block40
         '
-        Me.Block40.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block40.backgroundColorDimmingDuration = 100
-        Me.Block40.backgroundColorDimmingRatio = 0.13R
+        Me.Block40.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block40.backgroundColorDimmingDuration = 75
+        Me.Block40.backgroundColorDimmingRatio = 0.12R
         Me.Block40.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block40.colorID = 0
+        Me.Block40.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block40.Location = New System.Drawing.Point(36, 298)
         Me.Block40.Name = "Block40"
         Me.Block40.Size = New System.Drawing.Size(48, 48)
@@ -542,10 +634,12 @@ Partial Class Form1
         '
         'Block25
         '
-        Me.Block25.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block25.backgroundColorDimmingDuration = 100
-        Me.Block25.backgroundColorDimmingRatio = 0.13R
+        Me.Block25.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block25.backgroundColorDimmingDuration = 75
+        Me.Block25.backgroundColorDimmingRatio = 0.12R
         Me.Block25.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block25.colorID = 0
+        Me.Block25.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block25.Location = New System.Drawing.Point(252, 244)
         Me.Block25.Name = "Block25"
         Me.Block25.Size = New System.Drawing.Size(48, 48)
@@ -555,10 +649,12 @@ Partial Class Form1
         '
         'Block26
         '
-        Me.Block26.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block26.backgroundColorDimmingDuration = 100
-        Me.Block26.backgroundColorDimmingRatio = 0.13R
+        Me.Block26.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block26.backgroundColorDimmingDuration = 75
+        Me.Block26.backgroundColorDimmingRatio = 0.12R
         Me.Block26.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block26.colorID = 0
+        Me.Block26.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block26.Location = New System.Drawing.Point(306, 244)
         Me.Block26.Name = "Block26"
         Me.Block26.Size = New System.Drawing.Size(48, 48)
@@ -568,10 +664,12 @@ Partial Class Form1
         '
         'Block27
         '
-        Me.Block27.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block27.backgroundColorDimmingDuration = 100
-        Me.Block27.backgroundColorDimmingRatio = 0.13R
+        Me.Block27.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block27.backgroundColorDimmingDuration = 75
+        Me.Block27.backgroundColorDimmingRatio = 0.12R
         Me.Block27.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block27.colorID = 0
+        Me.Block27.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block27.Location = New System.Drawing.Point(360, 244)
         Me.Block27.Name = "Block27"
         Me.Block27.Size = New System.Drawing.Size(48, 48)
@@ -581,10 +679,12 @@ Partial Class Form1
         '
         'Block28
         '
-        Me.Block28.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block28.backgroundColorDimmingDuration = 100
-        Me.Block28.backgroundColorDimmingRatio = 0.13R
+        Me.Block28.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block28.backgroundColorDimmingDuration = 75
+        Me.Block28.backgroundColorDimmingRatio = 0.12R
         Me.Block28.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block28.colorID = 0
+        Me.Block28.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block28.Location = New System.Drawing.Point(414, 244)
         Me.Block28.Name = "Block28"
         Me.Block28.Size = New System.Drawing.Size(48, 48)
@@ -594,10 +694,12 @@ Partial Class Form1
         '
         'Block29
         '
-        Me.Block29.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block29.backgroundColorDimmingDuration = 100
-        Me.Block29.backgroundColorDimmingRatio = 0.13R
+        Me.Block29.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block29.backgroundColorDimmingDuration = 75
+        Me.Block29.backgroundColorDimmingRatio = 0.12R
         Me.Block29.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block29.colorID = 0
+        Me.Block29.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block29.Location = New System.Drawing.Point(144, 244)
         Me.Block29.Name = "Block29"
         Me.Block29.Size = New System.Drawing.Size(48, 48)
@@ -607,10 +709,12 @@ Partial Class Form1
         '
         'Block30
         '
-        Me.Block30.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block30.backgroundColorDimmingDuration = 100
-        Me.Block30.backgroundColorDimmingRatio = 0.13R
+        Me.Block30.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block30.backgroundColorDimmingDuration = 75
+        Me.Block30.backgroundColorDimmingRatio = 0.12R
         Me.Block30.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block30.colorID = 0
+        Me.Block30.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block30.Location = New System.Drawing.Point(198, 244)
         Me.Block30.Name = "Block30"
         Me.Block30.Size = New System.Drawing.Size(48, 48)
@@ -620,10 +724,12 @@ Partial Class Form1
         '
         'Block31
         '
-        Me.Block31.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block31.backgroundColorDimmingDuration = 100
-        Me.Block31.backgroundColorDimmingRatio = 0.13R
+        Me.Block31.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block31.backgroundColorDimmingDuration = 75
+        Me.Block31.backgroundColorDimmingRatio = 0.12R
         Me.Block31.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block31.colorID = 0
+        Me.Block31.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block31.Location = New System.Drawing.Point(90, 244)
         Me.Block31.Name = "Block31"
         Me.Block31.Size = New System.Drawing.Size(48, 48)
@@ -633,10 +739,12 @@ Partial Class Form1
         '
         'Block32
         '
-        Me.Block32.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block32.backgroundColorDimmingDuration = 100
-        Me.Block32.backgroundColorDimmingRatio = 0.13R
+        Me.Block32.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block32.backgroundColorDimmingDuration = 75
+        Me.Block32.backgroundColorDimmingRatio = 0.12R
         Me.Block32.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block32.colorID = 0
+        Me.Block32.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block32.Location = New System.Drawing.Point(36, 244)
         Me.Block32.Name = "Block32"
         Me.Block32.Size = New System.Drawing.Size(48, 48)
@@ -646,10 +754,12 @@ Partial Class Form1
         '
         'Block17
         '
-        Me.Block17.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block17.backgroundColorDimmingDuration = 100
-        Me.Block17.backgroundColorDimmingRatio = 0.13R
+        Me.Block17.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block17.backgroundColorDimmingDuration = 75
+        Me.Block17.backgroundColorDimmingRatio = 0.12R
         Me.Block17.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block17.colorID = 0
+        Me.Block17.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block17.Location = New System.Drawing.Point(252, 190)
         Me.Block17.Name = "Block17"
         Me.Block17.Size = New System.Drawing.Size(48, 48)
@@ -659,10 +769,12 @@ Partial Class Form1
         '
         'Block18
         '
-        Me.Block18.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block18.backgroundColorDimmingDuration = 100
-        Me.Block18.backgroundColorDimmingRatio = 0.13R
+        Me.Block18.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block18.backgroundColorDimmingDuration = 75
+        Me.Block18.backgroundColorDimmingRatio = 0.12R
         Me.Block18.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block18.colorID = 0
+        Me.Block18.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block18.Location = New System.Drawing.Point(306, 190)
         Me.Block18.Name = "Block18"
         Me.Block18.Size = New System.Drawing.Size(48, 48)
@@ -672,10 +784,12 @@ Partial Class Form1
         '
         'Block19
         '
-        Me.Block19.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block19.backgroundColorDimmingDuration = 100
-        Me.Block19.backgroundColorDimmingRatio = 0.13R
+        Me.Block19.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block19.backgroundColorDimmingDuration = 75
+        Me.Block19.backgroundColorDimmingRatio = 0.12R
         Me.Block19.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block19.colorID = 0
+        Me.Block19.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block19.Location = New System.Drawing.Point(360, 190)
         Me.Block19.Name = "Block19"
         Me.Block19.Size = New System.Drawing.Size(48, 48)
@@ -685,10 +799,12 @@ Partial Class Form1
         '
         'Block20
         '
-        Me.Block20.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block20.backgroundColorDimmingDuration = 100
-        Me.Block20.backgroundColorDimmingRatio = 0.13R
+        Me.Block20.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block20.backgroundColorDimmingDuration = 75
+        Me.Block20.backgroundColorDimmingRatio = 0.12R
         Me.Block20.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block20.colorID = 0
+        Me.Block20.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block20.Location = New System.Drawing.Point(414, 190)
         Me.Block20.Name = "Block20"
         Me.Block20.Size = New System.Drawing.Size(48, 48)
@@ -698,10 +814,12 @@ Partial Class Form1
         '
         'Block21
         '
-        Me.Block21.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block21.backgroundColorDimmingDuration = 100
-        Me.Block21.backgroundColorDimmingRatio = 0.13R
+        Me.Block21.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block21.backgroundColorDimmingDuration = 75
+        Me.Block21.backgroundColorDimmingRatio = 0.12R
         Me.Block21.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block21.colorID = 0
+        Me.Block21.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block21.Location = New System.Drawing.Point(144, 190)
         Me.Block21.Name = "Block21"
         Me.Block21.Size = New System.Drawing.Size(48, 48)
@@ -711,10 +829,12 @@ Partial Class Form1
         '
         'Block22
         '
-        Me.Block22.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block22.backgroundColorDimmingDuration = 100
-        Me.Block22.backgroundColorDimmingRatio = 0.13R
+        Me.Block22.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block22.backgroundColorDimmingDuration = 75
+        Me.Block22.backgroundColorDimmingRatio = 0.12R
         Me.Block22.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block22.colorID = 0
+        Me.Block22.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block22.Location = New System.Drawing.Point(198, 190)
         Me.Block22.Name = "Block22"
         Me.Block22.Size = New System.Drawing.Size(48, 48)
@@ -724,10 +844,12 @@ Partial Class Form1
         '
         'Block23
         '
-        Me.Block23.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block23.backgroundColorDimmingDuration = 100
-        Me.Block23.backgroundColorDimmingRatio = 0.13R
+        Me.Block23.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block23.backgroundColorDimmingDuration = 75
+        Me.Block23.backgroundColorDimmingRatio = 0.12R
         Me.Block23.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block23.colorID = 0
+        Me.Block23.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block23.Location = New System.Drawing.Point(90, 190)
         Me.Block23.Name = "Block23"
         Me.Block23.Size = New System.Drawing.Size(48, 48)
@@ -737,10 +859,12 @@ Partial Class Form1
         '
         'Block24
         '
-        Me.Block24.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block24.backgroundColorDimmingDuration = 100
-        Me.Block24.backgroundColorDimmingRatio = 0.13R
+        Me.Block24.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block24.backgroundColorDimmingDuration = 75
+        Me.Block24.backgroundColorDimmingRatio = 0.12R
         Me.Block24.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block24.colorID = 0
+        Me.Block24.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block24.Location = New System.Drawing.Point(36, 190)
         Me.Block24.Name = "Block24"
         Me.Block24.Size = New System.Drawing.Size(48, 48)
@@ -750,10 +874,12 @@ Partial Class Form1
         '
         'Block9
         '
-        Me.Block9.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block9.backgroundColorDimmingDuration = 100
-        Me.Block9.backgroundColorDimmingRatio = 0.13R
+        Me.Block9.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block9.backgroundColorDimmingDuration = 75
+        Me.Block9.backgroundColorDimmingRatio = 0.12R
         Me.Block9.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block9.colorID = 0
+        Me.Block9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block9.Location = New System.Drawing.Point(252, 136)
         Me.Block9.Name = "Block9"
         Me.Block9.Size = New System.Drawing.Size(48, 48)
@@ -763,10 +889,12 @@ Partial Class Form1
         '
         'Block10
         '
-        Me.Block10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block10.backgroundColorDimmingDuration = 100
-        Me.Block10.backgroundColorDimmingRatio = 0.13R
+        Me.Block10.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block10.backgroundColorDimmingDuration = 75
+        Me.Block10.backgroundColorDimmingRatio = 0.12R
         Me.Block10.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block10.colorID = 0
+        Me.Block10.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block10.Location = New System.Drawing.Point(306, 136)
         Me.Block10.Name = "Block10"
         Me.Block10.Size = New System.Drawing.Size(48, 48)
@@ -776,10 +904,12 @@ Partial Class Form1
         '
         'Block11
         '
-        Me.Block11.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block11.backgroundColorDimmingDuration = 100
-        Me.Block11.backgroundColorDimmingRatio = 0.13R
+        Me.Block11.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block11.backgroundColorDimmingDuration = 75
+        Me.Block11.backgroundColorDimmingRatio = 0.12R
         Me.Block11.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block11.colorID = 0
+        Me.Block11.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block11.Location = New System.Drawing.Point(360, 136)
         Me.Block11.Name = "Block11"
         Me.Block11.Size = New System.Drawing.Size(48, 48)
@@ -789,10 +919,12 @@ Partial Class Form1
         '
         'Block12
         '
-        Me.Block12.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block12.backgroundColorDimmingDuration = 100
-        Me.Block12.backgroundColorDimmingRatio = 0.13R
+        Me.Block12.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block12.backgroundColorDimmingDuration = 75
+        Me.Block12.backgroundColorDimmingRatio = 0.12R
         Me.Block12.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block12.colorID = 0
+        Me.Block12.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block12.Location = New System.Drawing.Point(414, 136)
         Me.Block12.Name = "Block12"
         Me.Block12.Size = New System.Drawing.Size(48, 48)
@@ -802,10 +934,12 @@ Partial Class Form1
         '
         'Block13
         '
-        Me.Block13.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block13.backgroundColorDimmingDuration = 100
-        Me.Block13.backgroundColorDimmingRatio = 0.13R
+        Me.Block13.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block13.backgroundColorDimmingDuration = 75
+        Me.Block13.backgroundColorDimmingRatio = 0.12R
         Me.Block13.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block13.colorID = 0
+        Me.Block13.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block13.Location = New System.Drawing.Point(144, 136)
         Me.Block13.Name = "Block13"
         Me.Block13.Size = New System.Drawing.Size(48, 48)
@@ -815,10 +949,12 @@ Partial Class Form1
         '
         'Block14
         '
-        Me.Block14.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block14.backgroundColorDimmingDuration = 100
-        Me.Block14.backgroundColorDimmingRatio = 0.13R
+        Me.Block14.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block14.backgroundColorDimmingDuration = 75
+        Me.Block14.backgroundColorDimmingRatio = 0.12R
         Me.Block14.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block14.colorID = 0
+        Me.Block14.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block14.Location = New System.Drawing.Point(198, 136)
         Me.Block14.Name = "Block14"
         Me.Block14.Size = New System.Drawing.Size(48, 48)
@@ -828,10 +964,12 @@ Partial Class Form1
         '
         'Block15
         '
-        Me.Block15.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block15.backgroundColorDimmingDuration = 100
-        Me.Block15.backgroundColorDimmingRatio = 0.13R
+        Me.Block15.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block15.backgroundColorDimmingDuration = 75
+        Me.Block15.backgroundColorDimmingRatio = 0.12R
         Me.Block15.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block15.colorID = 0
+        Me.Block15.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block15.Location = New System.Drawing.Point(90, 136)
         Me.Block15.Name = "Block15"
         Me.Block15.Size = New System.Drawing.Size(48, 48)
@@ -841,10 +979,12 @@ Partial Class Form1
         '
         'Block16
         '
-        Me.Block16.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block16.backgroundColorDimmingDuration = 100
-        Me.Block16.backgroundColorDimmingRatio = 0.13R
+        Me.Block16.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block16.backgroundColorDimmingDuration = 75
+        Me.Block16.backgroundColorDimmingRatio = 0.12R
         Me.Block16.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block16.colorID = 0
+        Me.Block16.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block16.Location = New System.Drawing.Point(36, 136)
         Me.Block16.Name = "Block16"
         Me.Block16.Size = New System.Drawing.Size(48, 48)
@@ -854,10 +994,12 @@ Partial Class Form1
         '
         'Block5
         '
-        Me.Block5.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block5.backgroundColorDimmingDuration = 100
-        Me.Block5.backgroundColorDimmingRatio = 0.13R
+        Me.Block5.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block5.backgroundColorDimmingDuration = 75
+        Me.Block5.backgroundColorDimmingRatio = 0.12R
         Me.Block5.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block5.colorID = 0
+        Me.Block5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block5.Location = New System.Drawing.Point(252, 82)
         Me.Block5.Name = "Block5"
         Me.Block5.Size = New System.Drawing.Size(48, 48)
@@ -867,10 +1009,12 @@ Partial Class Form1
         '
         'Block6
         '
-        Me.Block6.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block6.backgroundColorDimmingDuration = 100
-        Me.Block6.backgroundColorDimmingRatio = 0.13R
+        Me.Block6.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block6.backgroundColorDimmingDuration = 75
+        Me.Block6.backgroundColorDimmingRatio = 0.12R
         Me.Block6.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block6.colorID = 0
+        Me.Block6.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block6.Location = New System.Drawing.Point(306, 82)
         Me.Block6.Name = "Block6"
         Me.Block6.Size = New System.Drawing.Size(48, 48)
@@ -880,10 +1024,12 @@ Partial Class Form1
         '
         'Block7
         '
-        Me.Block7.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block7.backgroundColorDimmingDuration = 100
-        Me.Block7.backgroundColorDimmingRatio = 0.13R
+        Me.Block7.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block7.backgroundColorDimmingDuration = 75
+        Me.Block7.backgroundColorDimmingRatio = 0.12R
         Me.Block7.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block7.colorID = 0
+        Me.Block7.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block7.Location = New System.Drawing.Point(360, 82)
         Me.Block7.Name = "Block7"
         Me.Block7.Size = New System.Drawing.Size(48, 48)
@@ -893,10 +1039,12 @@ Partial Class Form1
         '
         'Block8
         '
-        Me.Block8.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block8.backgroundColorDimmingDuration = 100
-        Me.Block8.backgroundColorDimmingRatio = 0.13R
+        Me.Block8.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block8.backgroundColorDimmingDuration = 75
+        Me.Block8.backgroundColorDimmingRatio = 0.12R
         Me.Block8.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block8.colorID = 0
+        Me.Block8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block8.Location = New System.Drawing.Point(414, 82)
         Me.Block8.Name = "Block8"
         Me.Block8.Size = New System.Drawing.Size(48, 48)
@@ -906,10 +1054,12 @@ Partial Class Form1
         '
         'Block3
         '
-        Me.Block3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block3.backgroundColorDimmingDuration = 100
-        Me.Block3.backgroundColorDimmingRatio = 0.13R
+        Me.Block3.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block3.backgroundColorDimmingDuration = 75
+        Me.Block3.backgroundColorDimmingRatio = 0.12R
         Me.Block3.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block3.colorID = 0
+        Me.Block3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block3.Location = New System.Drawing.Point(144, 82)
         Me.Block3.Name = "Block3"
         Me.Block3.Size = New System.Drawing.Size(48, 48)
@@ -919,10 +1069,12 @@ Partial Class Form1
         '
         'Block4
         '
-        Me.Block4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block4.backgroundColorDimmingDuration = 100
-        Me.Block4.backgroundColorDimmingRatio = 0.13R
+        Me.Block4.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block4.backgroundColorDimmingDuration = 75
+        Me.Block4.backgroundColorDimmingRatio = 0.12R
         Me.Block4.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block4.colorID = 0
+        Me.Block4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block4.Location = New System.Drawing.Point(198, 82)
         Me.Block4.Name = "Block4"
         Me.Block4.Size = New System.Drawing.Size(48, 48)
@@ -932,10 +1084,12 @@ Partial Class Form1
         '
         'Block2
         '
-        Me.Block2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block2.backgroundColorDimmingDuration = 100
-        Me.Block2.backgroundColorDimmingRatio = 0.13R
+        Me.Block2.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block2.backgroundColorDimmingDuration = 75
+        Me.Block2.backgroundColorDimmingRatio = 0.12R
         Me.Block2.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block2.colorID = 0
+        Me.Block2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block2.Location = New System.Drawing.Point(90, 82)
         Me.Block2.Name = "Block2"
         Me.Block2.Size = New System.Drawing.Size(48, 48)
@@ -945,10 +1099,12 @@ Partial Class Form1
         '
         'Block1
         '
-        Me.Block1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Block1.backgroundColorDimmingDuration = 100
-        Me.Block1.backgroundColorDimmingRatio = 0.13R
+        Me.Block1.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.Block1.backgroundColorDimmingDuration = 75
+        Me.Block1.backgroundColorDimmingRatio = 0.12R
         Me.Block1.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.Block1.colorID = 0
+        Me.Block1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block1.Location = New System.Drawing.Point(36, 82)
         Me.Block1.Name = "Block1"
         Me.Block1.Size = New System.Drawing.Size(48, 48)
@@ -956,14 +1112,62 @@ Partial Class Form1
         Me.Block1.xIndex = 0
         Me.Block1.yIndex = 0
         '
-        'Button1
+        'FlatButton2
         '
-        Me.Button1.Location = New System.Drawing.Point(496, 82)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 67
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.FlatButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.FlatButton2.backgroundColorDimmingDuration = 75
+        Me.FlatButton2.backgroundColorDimmingRatio = 0.12R
+        Me.FlatButton2.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.FlatButton2.LblText = "Generate"
+        Me.FlatButton2.Location = New System.Drawing.Point(493, 119)
+        Me.FlatButton2.Name = "FlatButton2"
+        Me.FlatButton2.Size = New System.Drawing.Size(168, 31)
+        Me.FlatButton2.TabIndex = 69
+        '
+        'LoadTimer
+        '
+        Me.LoadTimer.Enabled = True
+        Me.LoadTimer.Interval = 500
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox1.Font = New System.Drawing.Font("Calibri", 10.0!)
+        Me.RichTextBox1.ForeColor = System.Drawing.Color.Gray
+        Me.RichTextBox1.Location = New System.Drawing.Point(493, 227)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.RichTextBox1.Size = New System.Drawing.Size(80, 119)
+        Me.RichTextBox1.TabIndex = 70
+        Me.RichTextBox1.Text = "1 2 3 4 1 2 3 4"
+        Me.RichTextBox1.WordWrap = False
+        '
+        'RichTextBox2
+        '
+        Me.RichTextBox2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox2.ForeColor = System.Drawing.Color.Gray
+        Me.RichTextBox2.Location = New System.Drawing.Point(581, 227)
+        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.RichTextBox2.ReadOnly = True
+        Me.RichTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.RichTextBox2.Size = New System.Drawing.Size(80, 119)
+        Me.RichTextBox2.TabIndex = 71
+        Me.RichTextBox2.Text = "Output"
+        '
+        'FlatButton3
+        '
+        Me.FlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.FlatButton3.backgroundColorDimmingDuration = 75
+        Me.FlatButton3.backgroundColorDimmingRatio = 0.12R
+        Me.FlatButton3.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.FlatButton3.LblText = "Load From Text"
+        Me.FlatButton3.Location = New System.Drawing.Point(493, 190)
+        Me.FlatButton3.Name = "FlatButton3"
+        Me.FlatButton3.Size = New System.Drawing.Size(168, 31)
+        Me.FlatButton3.TabIndex = 72
         '
         'Form1
         '
@@ -971,6 +1175,11 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(698, 538)
+        Me.Controls.Add(Me.FlatButton3)
+        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.FlatButton2)
+        Me.Controls.Add(Me.FlatButton1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -1118,4 +1327,10 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents FlatButton1 As FlatButton
+    Friend WithEvents FlatButton2 As FlatButton
+    Friend WithEvents LoadTimer As Timer
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents FlatButton3 As FlatButton
 End Class
