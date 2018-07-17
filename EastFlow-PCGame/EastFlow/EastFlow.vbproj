@@ -78,6 +78,7 @@
     <Compile Include="Block.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ShellOperation.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
