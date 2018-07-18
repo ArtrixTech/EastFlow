@@ -24,6 +24,23 @@ C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Debug\EastFlow.vbproj.CoreCompileIn
 C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Debug\EastFlow.exe
 C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Debug\EastFlow.xml
 C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Debug\EastFlow.pdb
+<<<<<<< HEAD
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.exe.config
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.exe
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.pdb
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.xml
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.Alert.resources
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.Block.resources
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.FlatButton.resources
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.Form1.resources
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.Resources.resources
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.vbproj.GenerateResource.Cache
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.vbproj.CoreCompileInputs.cache
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.exe
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.xml
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.pdb
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.vbprojResolveAssemblyReference.cache
+=======
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.exe.config
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.exe
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\bin\Debug\EastFlow.pdb
@@ -39,3 +56,4 @@ C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.exe
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.xml
 C:\Users\14121\Documents\GitHub\EastFlow\EastFlowUI\EastFlow\obj\Debug\EastFlow.pdb
+>>>>>>> af461c67551bd0024b0e06b3dd0b2f4e291a78bc

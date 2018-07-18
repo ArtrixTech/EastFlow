@@ -305,7 +305,6 @@ Partial Class Form1
         Me.Block57.colorID = 0
         Me.Block57.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block57.isCastle = False
-        Me.Block57.isResultBlock = False
         Me.Block57.Location = New System.Drawing.Point(252, 460)
         Me.Block57.Name = "Block57"
         Me.Block57.Size = New System.Drawing.Size(48, 48)
@@ -322,7 +321,6 @@ Partial Class Form1
         Me.Block58.colorID = 0
         Me.Block58.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block58.isCastle = False
-        Me.Block58.isResultBlock = False
         Me.Block58.Location = New System.Drawing.Point(306, 460)
         Me.Block58.Name = "Block58"
         Me.Block58.Size = New System.Drawing.Size(48, 48)
@@ -339,7 +337,6 @@ Partial Class Form1
         Me.Block59.colorID = 0
         Me.Block59.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block59.isCastle = False
-        Me.Block59.isResultBlock = False
         Me.Block59.Location = New System.Drawing.Point(360, 460)
         Me.Block59.Name = "Block59"
         Me.Block59.Size = New System.Drawing.Size(48, 48)
@@ -356,7 +353,6 @@ Partial Class Form1
         Me.Block60.colorID = 0
         Me.Block60.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block60.isCastle = False
-        Me.Block60.isResultBlock = False
         Me.Block60.Location = New System.Drawing.Point(414, 460)
         Me.Block60.Name = "Block60"
         Me.Block60.Size = New System.Drawing.Size(48, 48)
@@ -373,7 +369,6 @@ Partial Class Form1
         Me.Block61.colorID = 0
         Me.Block61.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block61.isCastle = False
-        Me.Block61.isResultBlock = False
         Me.Block61.Location = New System.Drawing.Point(144, 460)
         Me.Block61.Name = "Block61"
         Me.Block61.Size = New System.Drawing.Size(48, 48)
@@ -390,7 +385,6 @@ Partial Class Form1
         Me.Block62.colorID = 0
         Me.Block62.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block62.isCastle = False
-        Me.Block62.isResultBlock = False
         Me.Block62.Location = New System.Drawing.Point(198, 460)
         Me.Block62.Name = "Block62"
         Me.Block62.Size = New System.Drawing.Size(48, 48)
@@ -407,7 +401,6 @@ Partial Class Form1
         Me.Block63.colorID = 0
         Me.Block63.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block63.isCastle = False
-        Me.Block63.isResultBlock = False
         Me.Block63.Location = New System.Drawing.Point(90, 460)
         Me.Block63.Name = "Block63"
         Me.Block63.Size = New System.Drawing.Size(48, 48)
@@ -424,7 +417,7 @@ Partial Class Form1
         Me.Block64.colorID = 0
         Me.Block64.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block64.isCastle = False
-        Me.Block64.isResultBlock = False
+
         Me.Block64.Location = New System.Drawing.Point(36, 460)
         Me.Block64.Name = "Block64"
         Me.Block64.Size = New System.Drawing.Size(48, 48)
@@ -441,7 +434,7 @@ Partial Class Form1
         Me.Block49.colorID = 0
         Me.Block49.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block49.isCastle = False
-        Me.Block49.isResultBlock = False
+
         Me.Block49.Location = New System.Drawing.Point(252, 406)
         Me.Block49.Name = "Block49"
         Me.Block49.Size = New System.Drawing.Size(48, 48)
@@ -458,7 +451,7 @@ Partial Class Form1
         Me.Block50.colorID = 0
         Me.Block50.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block50.isCastle = False
-        Me.Block50.isResultBlock = False
+
         Me.Block50.Location = New System.Drawing.Point(306, 406)
         Me.Block50.Name = "Block50"
         Me.Block50.Size = New System.Drawing.Size(48, 48)
@@ -475,7 +468,7 @@ Partial Class Form1
         Me.Block51.colorID = 0
         Me.Block51.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block51.isCastle = False
-        Me.Block51.isResultBlock = False
+
         Me.Block51.Location = New System.Drawing.Point(360, 406)
         Me.Block51.Name = "Block51"
         Me.Block51.Size = New System.Drawing.Size(48, 48)
@@ -492,7 +485,7 @@ Partial Class Form1
         Me.Block52.colorID = 0
         Me.Block52.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block52.isCastle = False
-        Me.Block52.isResultBlock = False
+
         Me.Block52.Location = New System.Drawing.Point(414, 406)
         Me.Block52.Name = "Block52"
         Me.Block52.Size = New System.Drawing.Size(48, 48)
@@ -509,7 +502,7 @@ Partial Class Form1
         Me.Block53.colorID = 0
         Me.Block53.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block53.isCastle = False
-        Me.Block53.isResultBlock = False
+
         Me.Block53.Location = New System.Drawing.Point(144, 406)
         Me.Block53.Name = "Block53"
         Me.Block53.Size = New System.Drawing.Size(48, 48)
@@ -526,7 +519,7 @@ Partial Class Form1
         Me.Block54.colorID = 0
         Me.Block54.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block54.isCastle = False
-        Me.Block54.isResultBlock = False
+
         Me.Block54.Location = New System.Drawing.Point(198, 406)
         Me.Block54.Name = "Block54"
         Me.Block54.Size = New System.Drawing.Size(48, 48)
@@ -543,7 +536,7 @@ Partial Class Form1
         Me.Block55.colorID = 0
         Me.Block55.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block55.isCastle = False
-        Me.Block55.isResultBlock = False
+
         Me.Block55.Location = New System.Drawing.Point(90, 406)
         Me.Block55.Name = "Block55"
         Me.Block55.Size = New System.Drawing.Size(48, 48)
@@ -560,7 +553,7 @@ Partial Class Form1
         Me.Block56.colorID = 0
         Me.Block56.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block56.isCastle = False
-        Me.Block56.isResultBlock = False
+
         Me.Block56.Location = New System.Drawing.Point(36, 406)
         Me.Block56.Name = "Block56"
         Me.Block56.Size = New System.Drawing.Size(48, 48)
@@ -577,7 +570,7 @@ Partial Class Form1
         Me.Block41.colorID = 0
         Me.Block41.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block41.isCastle = False
-        Me.Block41.isResultBlock = False
+
         Me.Block41.Location = New System.Drawing.Point(252, 352)
         Me.Block41.Name = "Block41"
         Me.Block41.Size = New System.Drawing.Size(48, 48)
@@ -594,7 +587,7 @@ Partial Class Form1
         Me.Block42.colorID = 0
         Me.Block42.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block42.isCastle = False
-        Me.Block42.isResultBlock = False
+
         Me.Block42.Location = New System.Drawing.Point(306, 352)
         Me.Block42.Name = "Block42"
         Me.Block42.Size = New System.Drawing.Size(48, 48)
@@ -611,7 +604,7 @@ Partial Class Form1
         Me.Block43.colorID = 0
         Me.Block43.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block43.isCastle = False
-        Me.Block43.isResultBlock = False
+
         Me.Block43.Location = New System.Drawing.Point(360, 352)
         Me.Block43.Name = "Block43"
         Me.Block43.Size = New System.Drawing.Size(48, 48)
@@ -628,7 +621,7 @@ Partial Class Form1
         Me.Block44.colorID = 0
         Me.Block44.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block44.isCastle = False
-        Me.Block44.isResultBlock = False
+
         Me.Block44.Location = New System.Drawing.Point(414, 352)
         Me.Block44.Name = "Block44"
         Me.Block44.Size = New System.Drawing.Size(48, 48)
@@ -645,7 +638,7 @@ Partial Class Form1
         Me.Block45.colorID = 0
         Me.Block45.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block45.isCastle = False
-        Me.Block45.isResultBlock = False
+
         Me.Block45.Location = New System.Drawing.Point(144, 352)
         Me.Block45.Name = "Block45"
         Me.Block45.Size = New System.Drawing.Size(48, 48)
@@ -662,7 +655,7 @@ Partial Class Form1
         Me.Block46.colorID = 0
         Me.Block46.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block46.isCastle = False
-        Me.Block46.isResultBlock = False
+
         Me.Block46.Location = New System.Drawing.Point(198, 352)
         Me.Block46.Name = "Block46"
         Me.Block46.Size = New System.Drawing.Size(48, 48)
@@ -679,7 +672,7 @@ Partial Class Form1
         Me.Block47.colorID = 0
         Me.Block47.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block47.isCastle = False
-        Me.Block47.isResultBlock = False
+
         Me.Block47.Location = New System.Drawing.Point(90, 352)
         Me.Block47.Name = "Block47"
         Me.Block47.Size = New System.Drawing.Size(48, 48)
@@ -696,7 +689,7 @@ Partial Class Form1
         Me.Block48.colorID = 0
         Me.Block48.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block48.isCastle = False
-        Me.Block48.isResultBlock = False
+
         Me.Block48.Location = New System.Drawing.Point(36, 352)
         Me.Block48.Name = "Block48"
         Me.Block48.Size = New System.Drawing.Size(48, 48)
@@ -713,7 +706,7 @@ Partial Class Form1
         Me.Block33.colorID = 0
         Me.Block33.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block33.isCastle = False
-        Me.Block33.isResultBlock = False
+
         Me.Block33.Location = New System.Drawing.Point(252, 298)
         Me.Block33.Name = "Block33"
         Me.Block33.Size = New System.Drawing.Size(48, 48)
@@ -730,7 +723,7 @@ Partial Class Form1
         Me.Block34.colorID = 0
         Me.Block34.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block34.isCastle = False
-        Me.Block34.isResultBlock = False
+
         Me.Block34.Location = New System.Drawing.Point(306, 298)
         Me.Block34.Name = "Block34"
         Me.Block34.Size = New System.Drawing.Size(48, 48)
@@ -747,7 +740,7 @@ Partial Class Form1
         Me.Block35.colorID = 0
         Me.Block35.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block35.isCastle = False
-        Me.Block35.isResultBlock = False
+
         Me.Block35.Location = New System.Drawing.Point(360, 298)
         Me.Block35.Name = "Block35"
         Me.Block35.Size = New System.Drawing.Size(48, 48)
@@ -764,7 +757,7 @@ Partial Class Form1
         Me.Block36.colorID = 0
         Me.Block36.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block36.isCastle = False
-        Me.Block36.isResultBlock = False
+
         Me.Block36.Location = New System.Drawing.Point(414, 298)
         Me.Block36.Name = "Block36"
         Me.Block36.Size = New System.Drawing.Size(48, 48)
@@ -781,7 +774,7 @@ Partial Class Form1
         Me.Block37.colorID = 0
         Me.Block37.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block37.isCastle = False
-        Me.Block37.isResultBlock = False
+
         Me.Block37.Location = New System.Drawing.Point(144, 298)
         Me.Block37.Name = "Block37"
         Me.Block37.Size = New System.Drawing.Size(48, 48)
@@ -798,7 +791,7 @@ Partial Class Form1
         Me.Block38.colorID = 0
         Me.Block38.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block38.isCastle = False
-        Me.Block38.isResultBlock = False
+
         Me.Block38.Location = New System.Drawing.Point(198, 298)
         Me.Block38.Name = "Block38"
         Me.Block38.Size = New System.Drawing.Size(48, 48)
@@ -815,7 +808,7 @@ Partial Class Form1
         Me.Block39.colorID = 0
         Me.Block39.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block39.isCastle = False
-        Me.Block39.isResultBlock = False
+
         Me.Block39.Location = New System.Drawing.Point(90, 298)
         Me.Block39.Name = "Block39"
         Me.Block39.Size = New System.Drawing.Size(48, 48)
@@ -832,7 +825,7 @@ Partial Class Form1
         Me.Block40.colorID = 0
         Me.Block40.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block40.isCastle = False
-        Me.Block40.isResultBlock = False
+
         Me.Block40.Location = New System.Drawing.Point(36, 298)
         Me.Block40.Name = "Block40"
         Me.Block40.Size = New System.Drawing.Size(48, 48)
@@ -849,7 +842,7 @@ Partial Class Form1
         Me.Block25.colorID = 0
         Me.Block25.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block25.isCastle = False
-        Me.Block25.isResultBlock = False
+
         Me.Block25.Location = New System.Drawing.Point(252, 244)
         Me.Block25.Name = "Block25"
         Me.Block25.Size = New System.Drawing.Size(48, 48)
@@ -866,7 +859,7 @@ Partial Class Form1
         Me.Block26.colorID = 0
         Me.Block26.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block26.isCastle = False
-        Me.Block26.isResultBlock = False
+
         Me.Block26.Location = New System.Drawing.Point(306, 244)
         Me.Block26.Name = "Block26"
         Me.Block26.Size = New System.Drawing.Size(48, 48)
@@ -883,7 +876,7 @@ Partial Class Form1
         Me.Block27.colorID = 0
         Me.Block27.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block27.isCastle = False
-        Me.Block27.isResultBlock = False
+
         Me.Block27.Location = New System.Drawing.Point(360, 244)
         Me.Block27.Name = "Block27"
         Me.Block27.Size = New System.Drawing.Size(48, 48)
@@ -900,7 +893,7 @@ Partial Class Form1
         Me.Block28.colorID = 0
         Me.Block28.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block28.isCastle = False
-        Me.Block28.isResultBlock = False
+
         Me.Block28.Location = New System.Drawing.Point(414, 244)
         Me.Block28.Name = "Block28"
         Me.Block28.Size = New System.Drawing.Size(48, 48)
@@ -917,7 +910,7 @@ Partial Class Form1
         Me.Block29.colorID = 0
         Me.Block29.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block29.isCastle = False
-        Me.Block29.isResultBlock = False
+
         Me.Block29.Location = New System.Drawing.Point(144, 244)
         Me.Block29.Name = "Block29"
         Me.Block29.Size = New System.Drawing.Size(48, 48)
@@ -934,7 +927,7 @@ Partial Class Form1
         Me.Block30.colorID = 0
         Me.Block30.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block30.isCastle = False
-        Me.Block30.isResultBlock = False
+
         Me.Block30.Location = New System.Drawing.Point(198, 244)
         Me.Block30.Name = "Block30"
         Me.Block30.Size = New System.Drawing.Size(48, 48)
@@ -951,7 +944,7 @@ Partial Class Form1
         Me.Block31.colorID = 0
         Me.Block31.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block31.isCastle = False
-        Me.Block31.isResultBlock = False
+
         Me.Block31.Location = New System.Drawing.Point(90, 244)
         Me.Block31.Name = "Block31"
         Me.Block31.Size = New System.Drawing.Size(48, 48)
@@ -968,7 +961,7 @@ Partial Class Form1
         Me.Block32.colorID = 0
         Me.Block32.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block32.isCastle = False
-        Me.Block32.isResultBlock = False
+
         Me.Block32.Location = New System.Drawing.Point(36, 244)
         Me.Block32.Name = "Block32"
         Me.Block32.Size = New System.Drawing.Size(48, 48)
@@ -985,7 +978,7 @@ Partial Class Form1
         Me.Block17.colorID = 0
         Me.Block17.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block17.isCastle = False
-        Me.Block17.isResultBlock = False
+
         Me.Block17.Location = New System.Drawing.Point(252, 190)
         Me.Block17.Name = "Block17"
         Me.Block17.Size = New System.Drawing.Size(48, 48)
@@ -1002,7 +995,7 @@ Partial Class Form1
         Me.Block18.colorID = 0
         Me.Block18.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block18.isCastle = False
-        Me.Block18.isResultBlock = False
+
         Me.Block18.Location = New System.Drawing.Point(306, 190)
         Me.Block18.Name = "Block18"
         Me.Block18.Size = New System.Drawing.Size(48, 48)
@@ -1019,7 +1012,7 @@ Partial Class Form1
         Me.Block19.colorID = 0
         Me.Block19.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block19.isCastle = False
-        Me.Block19.isResultBlock = False
+
         Me.Block19.Location = New System.Drawing.Point(360, 190)
         Me.Block19.Name = "Block19"
         Me.Block19.Size = New System.Drawing.Size(48, 48)
@@ -1036,7 +1029,7 @@ Partial Class Form1
         Me.Block20.colorID = 0
         Me.Block20.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block20.isCastle = False
-        Me.Block20.isResultBlock = False
+
         Me.Block20.Location = New System.Drawing.Point(414, 190)
         Me.Block20.Name = "Block20"
         Me.Block20.Size = New System.Drawing.Size(48, 48)
@@ -1053,7 +1046,7 @@ Partial Class Form1
         Me.Block21.colorID = 0
         Me.Block21.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block21.isCastle = False
-        Me.Block21.isResultBlock = False
+
         Me.Block21.Location = New System.Drawing.Point(144, 190)
         Me.Block21.Name = "Block21"
         Me.Block21.Size = New System.Drawing.Size(48, 48)
@@ -1070,7 +1063,7 @@ Partial Class Form1
         Me.Block22.colorID = 0
         Me.Block22.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block22.isCastle = False
-        Me.Block22.isResultBlock = False
+
         Me.Block22.Location = New System.Drawing.Point(198, 190)
         Me.Block22.Name = "Block22"
         Me.Block22.Size = New System.Drawing.Size(48, 48)
@@ -1087,7 +1080,7 @@ Partial Class Form1
         Me.Block23.colorID = 0
         Me.Block23.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block23.isCastle = False
-        Me.Block23.isResultBlock = False
+
         Me.Block23.Location = New System.Drawing.Point(90, 190)
         Me.Block23.Name = "Block23"
         Me.Block23.Size = New System.Drawing.Size(48, 48)
@@ -1104,7 +1097,7 @@ Partial Class Form1
         Me.Block24.colorID = 0
         Me.Block24.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block24.isCastle = False
-        Me.Block24.isResultBlock = False
+
         Me.Block24.Location = New System.Drawing.Point(36, 190)
         Me.Block24.Name = "Block24"
         Me.Block24.Size = New System.Drawing.Size(48, 48)
@@ -1121,7 +1114,7 @@ Partial Class Form1
         Me.Block9.colorID = 0
         Me.Block9.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block9.isCastle = False
-        Me.Block9.isResultBlock = False
+
         Me.Block9.Location = New System.Drawing.Point(252, 136)
         Me.Block9.Name = "Block9"
         Me.Block9.Size = New System.Drawing.Size(48, 48)
@@ -1138,7 +1131,7 @@ Partial Class Form1
         Me.Block10.colorID = 0
         Me.Block10.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block10.isCastle = False
-        Me.Block10.isResultBlock = False
+
         Me.Block10.Location = New System.Drawing.Point(306, 136)
         Me.Block10.Name = "Block10"
         Me.Block10.Size = New System.Drawing.Size(48, 48)
@@ -1155,7 +1148,7 @@ Partial Class Form1
         Me.Block11.colorID = 0
         Me.Block11.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block11.isCastle = False
-        Me.Block11.isResultBlock = False
+
         Me.Block11.Location = New System.Drawing.Point(360, 136)
         Me.Block11.Name = "Block11"
         Me.Block11.Size = New System.Drawing.Size(48, 48)
@@ -1172,7 +1165,7 @@ Partial Class Form1
         Me.Block12.colorID = 0
         Me.Block12.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block12.isCastle = False
-        Me.Block12.isResultBlock = False
+
         Me.Block12.Location = New System.Drawing.Point(414, 136)
         Me.Block12.Name = "Block12"
         Me.Block12.Size = New System.Drawing.Size(48, 48)
@@ -1189,7 +1182,7 @@ Partial Class Form1
         Me.Block13.colorID = 0
         Me.Block13.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block13.isCastle = False
-        Me.Block13.isResultBlock = False
+
         Me.Block13.Location = New System.Drawing.Point(144, 136)
         Me.Block13.Name = "Block13"
         Me.Block13.Size = New System.Drawing.Size(48, 48)
@@ -1206,7 +1199,7 @@ Partial Class Form1
         Me.Block14.colorID = 0
         Me.Block14.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block14.isCastle = False
-        Me.Block14.isResultBlock = False
+
         Me.Block14.Location = New System.Drawing.Point(198, 136)
         Me.Block14.Name = "Block14"
         Me.Block14.Size = New System.Drawing.Size(48, 48)
@@ -1223,7 +1216,7 @@ Partial Class Form1
         Me.Block15.colorID = 0
         Me.Block15.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block15.isCastle = False
-        Me.Block15.isResultBlock = False
+
         Me.Block15.Location = New System.Drawing.Point(90, 136)
         Me.Block15.Name = "Block15"
         Me.Block15.Size = New System.Drawing.Size(48, 48)
@@ -1240,7 +1233,7 @@ Partial Class Form1
         Me.Block16.colorID = 0
         Me.Block16.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block16.isCastle = False
-        Me.Block16.isResultBlock = False
+
         Me.Block16.Location = New System.Drawing.Point(36, 136)
         Me.Block16.Name = "Block16"
         Me.Block16.Size = New System.Drawing.Size(48, 48)
@@ -1257,7 +1250,7 @@ Partial Class Form1
         Me.Block5.colorID = 0
         Me.Block5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block5.isCastle = False
-        Me.Block5.isResultBlock = False
+
         Me.Block5.Location = New System.Drawing.Point(252, 82)
         Me.Block5.Name = "Block5"
         Me.Block5.Size = New System.Drawing.Size(48, 48)
@@ -1274,7 +1267,7 @@ Partial Class Form1
         Me.Block6.colorID = 0
         Me.Block6.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block6.isCastle = False
-        Me.Block6.isResultBlock = False
+
         Me.Block6.Location = New System.Drawing.Point(306, 82)
         Me.Block6.Name = "Block6"
         Me.Block6.Size = New System.Drawing.Size(48, 48)
@@ -1291,7 +1284,7 @@ Partial Class Form1
         Me.Block7.colorID = 0
         Me.Block7.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block7.isCastle = False
-        Me.Block7.isResultBlock = False
+
         Me.Block7.Location = New System.Drawing.Point(360, 82)
         Me.Block7.Name = "Block7"
         Me.Block7.Size = New System.Drawing.Size(48, 48)
@@ -1308,7 +1301,7 @@ Partial Class Form1
         Me.Block8.colorID = 0
         Me.Block8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block8.isCastle = False
-        Me.Block8.isResultBlock = False
+
         Me.Block8.Location = New System.Drawing.Point(414, 82)
         Me.Block8.Name = "Block8"
         Me.Block8.Size = New System.Drawing.Size(48, 48)
@@ -1325,7 +1318,7 @@ Partial Class Form1
         Me.Block3.colorID = 0
         Me.Block3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block3.isCastle = False
-        Me.Block3.isResultBlock = False
+
         Me.Block3.Location = New System.Drawing.Point(144, 82)
         Me.Block3.Name = "Block3"
         Me.Block3.Size = New System.Drawing.Size(48, 48)
@@ -1342,7 +1335,7 @@ Partial Class Form1
         Me.Block4.colorID = 0
         Me.Block4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block4.isCastle = False
-        Me.Block4.isResultBlock = False
+
         Me.Block4.Location = New System.Drawing.Point(198, 82)
         Me.Block4.Name = "Block4"
         Me.Block4.Size = New System.Drawing.Size(48, 48)
@@ -1359,7 +1352,7 @@ Partial Class Form1
         Me.Block2.colorID = 0
         Me.Block2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block2.isCastle = False
-        Me.Block2.isResultBlock = False
+
         Me.Block2.Location = New System.Drawing.Point(90, 82)
         Me.Block2.Name = "Block2"
         Me.Block2.Size = New System.Drawing.Size(48, 48)
@@ -1376,7 +1369,7 @@ Partial Class Form1
         Me.Block1.colorID = 0
         Me.Block1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Block1.isCastle = False
-        Me.Block1.isResultBlock = False
+
         Me.Block1.Location = New System.Drawing.Point(36, 82)
         Me.Block1.Name = "Block1"
         Me.Block1.Size = New System.Drawing.Size(48, 48)
