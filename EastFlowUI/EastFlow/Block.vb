@@ -50,6 +50,7 @@
         Me.BackColor = colorList(Me.colorIndex)
         Me.blockColor = Me.BackColor
         Me.isCastle = True
+        Me.isResultBlock = False
 
         renderColor()
 

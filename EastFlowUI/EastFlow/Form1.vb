@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Imports System.Threading.Thread
+Public Class Form1
 
     Dim allBlocks(64) As Block
 
@@ -30,19 +31,30 @@
 
         allBlocks = {Block1, Block2, Block3, Block4, Block5, Block6, Block7, Block8, Block9, Block10, Block11, Block12, Block13, Block14, Block15, Block16, Block17, Block18, Block19, Block20, Block21, Block22, Block23, Block24, Block25, Block26, Block27, Block28, Block29, Block30, Block31, Block32, Block33, Block34, Block35, Block36, Block37, Block38, Block39, Block40, Block41, Block42, Block43, Block44, Block45, Block46, Block47, Block48, Block49, Block50, Block51, Block52, Block53, Block54, Block55, Block56, Block57, Block58, Block59, Block60, Block61, Block62, Block63, Block64}
 
-        Dim visitedX() As Boolean = {False, False, False, False, False, False, False, False}
-
         For Each block As Block In allBlocks
             blocksCoor(block.xIndex, block.yIndex) = block
         Next
 
     End Sub
 
+    Dim isRunning = False
 
-    Private Sub Calculate(sender As Object, e As EventArgs) Handles FlatButton4.MouseDown
+    Private Sub createNewThread(sender As Object, e As EventArgs) Handles btnCalculate.MouseDown
 
-        imgCalc.Show()
-        lblCalc.Show()
+        If Not isRunning Then
+            Dim tr As New Threading.Thread(AddressOf Calculate)
+            imgCalc.Show()
+            lblCalc.Show()
+            tr.Start()
+            Label4.Text = 0
+            totalTime = 0
+            CalcTimer.Start()
+        Else
+            Alert1.showAlert()
+        End If
+
+    End Sub
+    Private Sub Calculate()
 
         Dim p As New ShellOperation("EastFlowAlgo.exe")
 
@@ -91,17 +103,19 @@
 
         imgCalc.Hide()
         lblCalc.Hide()
+        CalcTimer.Stop()
 
+        isRunning = False
 
     End Sub
 
-    Private Sub FlatButton1_Click(sender As Object, e As EventArgs) Handles FlatButton1.Click
+    Private Sub FlatButton1_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         For Each block As Block In allBlocks
             block.resetColor()
         Next
     End Sub
 
-    Private Sub btnGenerate(sender As Object, e As EventArgs) Handles FlatButton2.Click
+    Private Sub btnGenerate(sender As Object, e As EventArgs) Handles btnGen.Click
         RichTextBox2.Text = generateCommandInput()
     End Sub
 
@@ -111,7 +125,7 @@
         End If
     End Sub
 
-    Private Sub loadFromText(sender As Object, e As EventArgs) Handles FlatButton3.Click
+    Private Sub loadFromText(sender As Object, e As EventArgs) Handles btnLoad.Click
         For Each block As Block In allBlocks
             block.resetColor()
         Next
@@ -135,15 +149,20 @@
 
     End Sub
 
-    Private Sub FlatButton1_Load(sender As Object, e As EventArgs)
-
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CheckForIllegalCrossThreadCalls = False
     End Sub
 
-    Private Sub FlatButton1_Load_1(sender As Object, e As EventArgs) Handles FlatButton1.Load
+    Dim totalTime = 0
+    Dim min = 0, sec = 0, sep = 0
 
-    End Sub
+    Private Sub CalcTimer_Tick(sender As Object, e As EventArgs) Handles CalcTimer.Tick
+        totalTime += 60
+        sec = CInt(totalTime / 1000)
+        If sec < 10 Then
+            sec = "0" + Str(sec)
+        End If
 
-    Private Sub Calculate(sender As Object, e As MouseEventArgs) Handles FlatButton4.MouseDown
-
+        Label4.Text = CStr(sec).Replace(" ", "")
     End Sub
 End Class

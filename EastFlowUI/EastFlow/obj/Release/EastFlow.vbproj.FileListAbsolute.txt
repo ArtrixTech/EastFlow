@@ -1,0 +1,15 @@
+C:\Users\Artri\Desktop\EastFlow\EastFlow\bin\Release\EastFlow.exe.config
+C:\Users\Artri\Desktop\EastFlow\EastFlow\bin\Release\EastFlow.exe
+C:\Users\Artri\Desktop\EastFlow\EastFlow\bin\Release\EastFlow.pdb
+C:\Users\Artri\Desktop\EastFlow\EastFlow\bin\Release\EastFlow.xml
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.Block.resources
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.FlatButton.resources
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.Form1.resources
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.Resources.resources
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.vbproj.GenerateResource.cache
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.vbproj.CoreCompileInputs.cache
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.exe
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.xml
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.pdb
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.Alert.resources
+C:\Users\Artri\Desktop\EastFlow\EastFlow\obj\Release\EastFlow.vbprojAssemblyReference.cache
