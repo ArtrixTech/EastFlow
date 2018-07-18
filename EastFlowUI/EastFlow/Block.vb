@@ -3,9 +3,7 @@
     Private __xIndex As Integer = 0
     Private __yIndex As Integer = 0
 
-    Private __isResultBlock As Boolean = False
     Private __isCastle As Boolean = False
-
 
     Private __defaultBackgroundColor = Color.WhiteSmoke
 
