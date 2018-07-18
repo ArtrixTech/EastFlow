@@ -17,39 +17,9 @@
     Private colorChangeTimer As Timer
     Private colorChangeDirection As Boolean = True ' True as positive direction, and False as negative
 
-    Private colorList() As Color = {Color.FromArgb(255, 255, 177, 153), Color.FromArgb(255, 132, 220, 185),
-       Color.FromArgb(255, 143, 211, 244), Color.FromArgb(255, 251, 237, 150)} ' RGBY
-    Private colorIndex = -1
-    Private colorIndex_Max = 3
-
     Private __text = ""
     Private __font As New Font("Microsoft Yahei UI", 2.8)
 
-
-    Sub handleMouseRightClick(sender As Object, e As EventArgs)
-
-        Me.colorIndex = -1
-        Me.BackColor = Me.__defaultBackgroundColor
-        Me.blockColor = Me.__defaultBackgroundColor
-
-        renderColor()
-
-    End Sub
-
-    Sub handleMouseLeftClick(sender As Object, e As EventArgs)
-
-        If Me.colorIndex = Me.colorIndex_Max Then
-            Me.colorIndex = 0
-        ElseIf Me.colorIndex < Me.colorIndex_Max Then
-            Me.colorIndex += 1
-        End If
-
-        Me.BackColor = colorList(Me.colorIndex)
-        Me.blockColor = Me.BackColor
-
-        renderColor()
-
-    End Sub
 
     Private Sub Block_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
         Me.colorChangeDirection = True
@@ -97,6 +67,15 @@
         Set(ByVal value As Color)
             Me.__blockColor = value
             renderColor()
+        End Set
+    End Property
+
+    Public Property textColor As Color
+        Get
+            Return Me.lblCoor.ForeColor
+        End Get
+        Set(ByVal value As Color)
+            Me.lblCoor.ForeColor = value
         End Set
     End Property
 

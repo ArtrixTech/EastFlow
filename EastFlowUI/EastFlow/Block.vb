@@ -127,7 +127,6 @@
         Me.colorChangeTimer.Start()
     End Sub
 
-
     Private Sub RoundCorner_MouseUnHover(sender As Object, e As EventArgs) Handles RoundCorner.MouseLeave
         Me.colorChangeDirection = False
         Me.colorChangeTimer.Start()
@@ -137,7 +136,6 @@
         Me.colorChangeDirection = True
         Me.colorChangeTimer.Start()
     End Sub
-
 
     Private Sub CastleIndicator_MouseUnHover(sender As Object, e As EventArgs) Handles CastleIndicator.MouseLeave
         Me.colorChangeDirection = False

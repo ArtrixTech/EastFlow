@@ -38,19 +38,33 @@ Public Class Form1
     End Sub
 
     Dim isRunning = False
+    Dim runningThread As Threading.Thread
 
-    Private Sub createNewThread(sender As Object, e As EventArgs) Handles btnCalculate.MouseDown
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs)
 
         If Not isRunning Then
-            Dim tr As New Threading.Thread(AddressOf Calculate)
+
+            runningThread = New Threading.Thread(AddressOf Calculate)
+
+            ' Calc GIF
             imgCalc.Show()
             lblCalc.Show()
-            tr.Start()
-            Label4.Text = 0
+
+            ' Abort Button
+            btnAbort.Show()
+
+            runningThread.Start()
+
+            ' Timer Initialize
+            Label4.Text = "00"
             totalTime = 0
+            isRunning = True
             CalcTimer.Start()
+
         Else
+
             Alert1.showAlert()
+
         End If
 
     End Sub
@@ -99,21 +113,33 @@ Public Class Form1
 
         End Try
 
+        ' GIF
         imgCalc.Hide()
         lblCalc.Hide()
+
+        ' Timer
         CalcTimer.Stop()
+
+        ' Abort Button
+        btnAbort.Hide()
 
         isRunning = False
 
     End Sub
 
-    Private Sub FlatButton1_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+
         For Each block As Block In allBlocks
             block.resetColor()
         Next
+
+        ' Timer Initialize
+        Label4.Text = "00"
+        totalTime = 0
+
     End Sub
 
-    Private Sub btnGenerate(sender As Object, e As EventArgs) Handles btnGen.Click
+    Private Sub btnGen_Click(sender As Object, e As EventArgs) Handles btnGen.Click
         RichTextBox2.Text = generateCommandInput()
     End Sub
 
@@ -150,11 +176,112 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Me.CheckForIllegalCrossThreadCalls = False
+
+        For Each ctrl As Control In btnAbort.Controls
+            AddHandler ctrl.MouseClick, AddressOf btnAbort_Click
+        Next
+
+        For Each ctrl As Control In btnCalc.Controls
+            AddHandler ctrl.MouseDown, AddressOf btnCalc_Click
+        Next
+        AddHandler btnCalc.MouseDown, AddressOf btnCalc_Click
+
+        For Each ctrl As Control In btnClear.Controls
+            AddHandler ctrl.MouseClick, AddressOf btnClear_Click
+        Next
+
+        For Each ctrl As Control In btnGen.Controls
+            AddHandler ctrl.MouseClick, AddressOf btnGen_Click
+        Next
+
+        For Each ctrl As Control In btnLoad.Controls
+            AddHandler ctrl.MouseClick, AddressOf loadFromText
+        Next
+
+        For Each ctrl As Control In btnClose.Controls
+            AddHandler ctrl.MouseClick, AddressOf btnClose_Click
+        Next
+        AddHandler btnClose.MouseClick, AddressOf btnClose_Click
+
     End Sub
 
     Dim totalTime = 0
     Dim min = 0, sec = 0, sep = 0
+
+    Private Sub ThreadUpdateTimer_Tick(sender As Object, e As EventArgs) Handles ThreadUpdateTimer.Tick
+
+        Try
+
+            If runningThread.IsAlive Then
+
+                isRunning = True
+
+                ' Calc GIF
+                imgCalc.Show()
+                lblCalc.Show()
+
+                ' Abort Button
+                btnAbort.Show()
+
+            Else
+
+                isRunning = False
+
+                ' Calc GIF
+                imgCalc.Hide()
+                lblCalc.Hide()
+
+                ' Abort Button
+                btnAbort.Hide()
+
+            End If
+
+        Catch ex As Exception
+
+            isRunning = False
+
+        End Try
+
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+
+        Try
+            runningThread.Abort()
+        Catch ex As Exception
+        End Try
+
+        Me.Dispose()
+
+    End Sub
+
+    Private Sub FlatButton1_Load(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btnAbort_Click(sender As Object, e As EventArgs) Handles btnAbort.Click
+
+        runningThread.Abort()
+
+        ' GIF
+        imgCalc.Hide()
+        lblCalc.Hide()
+
+        ' Timer
+        CalcTimer.Stop()
+
+        ' Abort Button
+        btnAbort.Hide()
+
+        ' Timer Initialize
+        Label4.Text = "00"
+        totalTime = 0
+
+        isRunning = False
+
+    End Sub
 
     Private Sub CalcTimer_Tick(sender As Object, e As EventArgs) Handles CalcTimer.Tick
         totalTime += 60

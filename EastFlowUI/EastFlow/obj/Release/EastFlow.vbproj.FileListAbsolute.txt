@@ -17,7 +17,6 @@ E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.ex
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.exe
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.pdb
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.xml
-E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbprojResolveAssemblyReference.cache
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Alert.resources
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Block.resources
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.FlatButton.resources
@@ -28,3 +27,4 @@ E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vb
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.exe
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.xml
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.pdb
+E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbprojResolveAssemblyReference.cache
