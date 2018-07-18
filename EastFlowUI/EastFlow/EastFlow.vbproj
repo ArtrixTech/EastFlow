@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert.Designer.vb">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Block.Designer.vb">
       <DependentUpon>Block.vb</DependentUpon>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Block.resx">
       <DependentUpon>Block.vb</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5-160914192R5-50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert-fill.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
