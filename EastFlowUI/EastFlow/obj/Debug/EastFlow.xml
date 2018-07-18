@@ -27,6 +27,11 @@ EastFlow
   查找 System.Drawing.Bitmap 类型的本地化资源。
 </summary>
 </member>
+<member name="P:EastFlow.My.Resources.Resources.alert_fill">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
 <member name="P:EastFlow.My.Resources.Resources.castle">
 <summary>
   查找 System.Drawing.Bitmap 类型的本地化资源。
