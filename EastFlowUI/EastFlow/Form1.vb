@@ -112,7 +112,9 @@
     End Sub
 
     Private Sub loadFromText(sender As Object, e As EventArgs) Handles FlatButton3.Click
-
+        For Each block As Block In allBlocks
+            block.resetColor()
+        Next
         Try
             Dim x = 0, y = 0
 
