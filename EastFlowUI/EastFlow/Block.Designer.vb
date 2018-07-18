@@ -23,12 +23,10 @@ Partial Class Block
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblCoor = New System.Windows.Forms.Label()
-        Me.CastleIndicator = New System.Windows.Forms.PictureBox()
-        Me.ResultIndicator = New System.Windows.Forms.PictureBox()
         Me.RoundCorner = New System.Windows.Forms.PictureBox()
-        CType(Me.CastleIndicator, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ResultIndicator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CastleIndicator = New System.Windows.Forms.PictureBox()
         CType(Me.RoundCorner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CastleIndicator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCoor
@@ -43,6 +41,16 @@ Partial Class Block
         Me.lblCoor.Text = "0,0"
         Me.lblCoor.Visible = False
         '
+        'RoundCorner
+        '
+        Me.RoundCorner.Image = Global.EastFlow.My.Resources.Resources.未标题_1
+        Me.RoundCorner.Location = New System.Drawing.Point(0, 0)
+        Me.RoundCorner.Name = "RoundCorner"
+        Me.RoundCorner.Size = New System.Drawing.Size(48, 48)
+        Me.RoundCorner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.RoundCorner.TabIndex = 1
+        Me.RoundCorner.TabStop = False
+        '
         'CastleIndicator
         '
         Me.CastleIndicator.BackColor = System.Drawing.Color.Transparent
@@ -55,47 +63,24 @@ Partial Class Block
         Me.CastleIndicator.TabStop = False
         Me.CastleIndicator.Visible = False
         '
-        'ResultIndicator
-        '
-        Me.ResultIndicator.BackColor = System.Drawing.Color.DarkGray
-        Me.ResultIndicator.Location = New System.Drawing.Point(10, 10)
-        Me.ResultIndicator.Name = "ResultIndicator"
-        Me.ResultIndicator.Size = New System.Drawing.Size(28, 28)
-        Me.ResultIndicator.TabIndex = 2
-        Me.ResultIndicator.TabStop = False
-        Me.ResultIndicator.Visible = False
-        '
-        'RoundCorner
-        '
-        Me.RoundCorner.Image = Global.EastFlow.My.Resources.Resources.未标题_1
-        Me.RoundCorner.Location = New System.Drawing.Point(0, 0)
-        Me.RoundCorner.Name = "RoundCorner"
-        Me.RoundCorner.Size = New System.Drawing.Size(48, 48)
-        Me.RoundCorner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.RoundCorner.TabIndex = 1
-        Me.RoundCorner.TabStop = False
-        '
         'Block
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.CastleIndicator)
-        Me.Controls.Add(Me.ResultIndicator)
         Me.Controls.Add(Me.lblCoor)
         Me.Controls.Add(Me.RoundCorner)
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Name = "Block"
         Me.Size = New System.Drawing.Size(48, 48)
-        CType(Me.CastleIndicator, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResultIndicator, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RoundCorner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CastleIndicator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents lblCoor As Label
     Friend WithEvents RoundCorner As PictureBox
-    Friend WithEvents ResultIndicator As PictureBox
     Friend WithEvents CastleIndicator As PictureBox
 End Class

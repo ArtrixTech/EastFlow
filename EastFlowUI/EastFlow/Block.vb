@@ -50,8 +50,6 @@
         Me.BackColor = colorList(Me.colorIndex)
         Me.blockColor = Me.BackColor
         Me.isCastle = True
-        Me.isResultBlock = False
-
         renderColor()
 
     End Sub
@@ -80,7 +78,7 @@
 
     End Sub
 
-    Private Sub ResultIndicator_MouseDown(sender As Object, e As MouseEventArgs) Handles ResultIndicator.MouseDown
+    Private Sub ResultIndicator_MouseDown(sender As Object, e As MouseEventArgs)
 
         If e.Button = Windows.Forms.MouseButtons.Right Then
             handleMouseRightClick(sender, e)
@@ -148,13 +146,13 @@
         Me.colorChangeTimer.Start()
     End Sub
 
-    Private Sub ResultIndicator_MouseMove(sender As Object, e As MouseEventArgs) Handles ResultIndicator.MouseMove
+    Private Sub ResultIndicator_MouseMove(sender As Object, e As MouseEventArgs)
         Me.colorChangeDirection = True
         Me.colorChangeTimer.Start()
     End Sub
 
 
-    Private Sub ResultIndicator_MouseUnHover(sender As Object, e As EventArgs) Handles ResultIndicator.MouseLeave
+    Private Sub ResultIndicator_MouseUnHover(sender As Object, e As EventArgs)
         Me.colorChangeDirection = False
         Me.colorChangeTimer.Start()
     End Sub
@@ -241,28 +239,6 @@
 
     End Property
 
-    Public Property isResultBlock As Boolean
-
-        Get
-            Return Me.__isResultBlock
-        End Get
-
-        Set(ByVal value As Boolean)
-
-            Me.__isResultBlock = value
-
-            If Me.isResultBlock Then
-                Me.ResultIndicator.Show()
-            Else
-                Me.ResultIndicator.Hide()
-            End If
-
-            renderColor()
-
-        End Set
-
-    End Property
-
     Public Property isCastle As Boolean
 
         Get
@@ -288,23 +264,11 @@
     Sub renderColor()
 
         Dim sourceColor = Me.blockColor
-        Me.ResultIndicator.BackColor = Me.blockColor
 
-        If Not Me.isResultBlock And Me.colorID > 0 Then
-
-            If Me.isCastle Then
-                Me.CastleIndicator.Show()
-            Else
-                Me.CastleIndicator.Hide()
-            End If
-
-        End If
-
-        If Me.isResultBlock Then
-
+        If Me.isCastle Then
+            Me.CastleIndicator.Show()
+        Else
             Me.CastleIndicator.Hide()
-            sourceColor = Me.__defaultBackgroundColor
-
         End If
 
         Dim r = sourceColor.R, g = sourceColor.G, b = sourceColor.B
@@ -350,7 +314,7 @@
         Me.BackColor = Me.__defaultBackgroundColor
         Me.blockColor = Me.BackColor
         Me.colorIndex = -1
-        Me.isResultBlock = False
+        Me.isCastle = False
         Me.CastleIndicator.Hide()
     End Sub
 

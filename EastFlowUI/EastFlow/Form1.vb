@@ -92,8 +92,6 @@ Public Class Form1
                     If resultCoor(x, y) >= 0 Then
                         blocksCoor(x, y).colorID = resultCoor(x, y)
                         blocksCoor(x, y).isCastle = False
-
-                        'blocksCoor(x, y).isResultBlock = True
                     End If
                 Next
             Next
@@ -137,7 +135,9 @@ Public Class Form1
                     Dim data = line.Split(" ")
                     For x = 0 To 7
                         blocksCoor(x, y).colorID = data(x)
-                        blocksCoor(x, y).isCastle = True
+                        If blocksCoor(x, y).colorID > 0 Then
+                            blocksCoor(x, y).isCastle = True
+                        End If
                     Next
                     y += 1
                 End If
