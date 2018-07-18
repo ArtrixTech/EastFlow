@@ -9,7 +9,7 @@ using namespace std;
 int map[8][8];
 bool castle[8][8];
 bool visit[8][8];
-int nextpos[4][2] = { { -1, 0 }, { 0, -1 }, { 1, 0 }, { 0, 1 } };
+int nextpos[4][2] = { { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 } };
 
 void printmap();
 
@@ -92,5 +92,5 @@ void printmap()
             cout << map[i][j] << ' ';
         cout << endl;    
 	}
-    system("pause");
+    // system("pause");
 }
