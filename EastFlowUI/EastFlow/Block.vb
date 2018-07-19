@@ -310,11 +310,13 @@
     End Sub
 
     Sub resetColor()
+
         Me.BackColor = Me.__defaultBackgroundColor
         Me.blockColor = Me.BackColor
         Me.colorIndex = -1
         Me.isCastle = False
         Me.CastleIndicator.Hide()
+
     End Sub
 
 End Class
