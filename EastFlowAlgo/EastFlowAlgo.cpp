@@ -92,5 +92,5 @@ void printmap()
             cout << map[i][j] << ' ';
         cout << endl;    
 	}
-    system("pause");
+    // system("pause");
 }
