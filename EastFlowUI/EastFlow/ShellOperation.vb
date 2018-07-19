@@ -1,4 +1,5 @@
-﻿Public Class ShellOperation
+﻿Imports System.ComponentModel
+Public Class ShellOperation
 
     Private __process As Process
     Private __process_info As ProcessStartInfo
@@ -47,6 +48,11 @@
         End If
 
     End Sub
+
+    Public Sub killProcess()
+        Me.__process.Kill()
+    End Sub
+
 
     Public Function getOutput()
 

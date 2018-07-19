@@ -39,6 +39,7 @@ Public Class Form1
 
     Dim isRunning = False
     Dim runningThread As Threading.Thread
+    Dim runningProcess As ShellOperation
 
     Private Sub btnCalc_Click(sender As Object, e As EventArgs)
 
@@ -70,11 +71,11 @@ Public Class Form1
     End Sub
     Private Sub Calculate()
 
-        Dim p As New ShellOperation("EastFlowAlgo.exe")
+        runningProcess = New ShellOperation("EastFlowAlgo.exe")
 
-        p.run()
-        p.input(generateCommandInput())
-        Dim result As String = p.getOutput()
+        runningProcess.run()
+        runningProcess.input(generateCommandInput())
+        Dim result As String = runningProcess.getOutput()
         RichTextBox2.Text = result
         'MessageBox.Show(result)
 
@@ -249,6 +250,7 @@ Public Class Form1
     Private Sub btnClose_Click(sender As Object, e As EventArgs)
 
         Try
+            runningProcess.killProcess()
             runningThread.Abort()
         Catch ex As Exception
         End Try
@@ -259,6 +261,7 @@ Public Class Form1
 
     Private Sub btnAbort_Click(sender As Object, e As EventArgs) Handles btnAbort.Click
 
+        runningProcess.killProcess()
         runningThread.Abort()
 
         ' GIF

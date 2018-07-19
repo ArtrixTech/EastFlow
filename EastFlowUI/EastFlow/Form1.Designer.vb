@@ -246,7 +246,6 @@ Partial Class Form1
         '
         'ThreadUpdateTimer
         '
-        Me.ThreadUpdateTimer.Enabled = True
         Me.ThreadUpdateTimer.Interval = 500
         '
         'PictureBox3
