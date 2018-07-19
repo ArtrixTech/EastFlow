@@ -257,10 +257,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub FlatButton1_Load(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub btnAbort_Click(sender As Object, e As EventArgs) Handles btnAbort.Click
 
         runningThread.Abort()
