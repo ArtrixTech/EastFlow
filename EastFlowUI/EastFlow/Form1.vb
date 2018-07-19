@@ -11,11 +11,20 @@ Public Class Form1
 
         For y = 0 To 7
             For x = 0 To 7
+
                 If Not x = 7 Then
-                    returnStr += CStr(blocksCoor(x, y).colorID)
+                    If blocksCoor(x, y).isCastle Then
+                        returnStr += CStr(blocksCoor(x, y).colorID)
+                    Else
+                        returnStr += CStr("0")
+                    End If
                     returnStr += " "
                 Else
-                    returnStr += CStr(blocksCoor(x, y).colorID)
+                    If blocksCoor(x, y).isCastle Then
+                        returnStr += CStr(blocksCoor(x, y).colorID)
+                    Else
+                        returnStr += CStr("0")
+                    End If
                 End If
             Next
             returnStr += vbCrLf
@@ -128,15 +137,29 @@ Public Class Form1
 
     End Sub
 
+    Private Sub btnClearReturn_Click(sender As Object, e As EventArgs) Handles btnClearReturn.Click
+
+        For Each block As Block In allBlocks
+            If Not block.isCastle Then
+                block.resetColor()
+            End If
+        Next
+
+    End Sub
+
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
 
         For Each block As Block In allBlocks
             block.resetColor()
         Next
 
-        ' Timer Initialize
-        Label4.Text = "00"
-        totalTime = 0
+        If Not isRunning Then
+
+            ' Timer Initialize
+            Label4.Text = "00"
+            totalTime = 0
+
+        End If
 
     End Sub
 
@@ -191,6 +214,10 @@ Public Class Form1
 
         For Each ctrl As Control In btnClear.Controls
             AddHandler ctrl.MouseClick, AddressOf btnClear_Click
+        Next
+
+        For Each ctrl As Control In btnClearReturn.Controls
+            AddHandler ctrl.MouseClick, AddressOf btnClearReturn_Click
         Next
 
         For Each ctrl As Control In btnGen.Controls

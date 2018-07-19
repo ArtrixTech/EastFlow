@@ -109,6 +109,7 @@ Partial Class Form1
         Me.Block4 = New EastFlow.Block()
         Me.Block2 = New EastFlow.Block()
         Me.Block1 = New EastFlow.Block()
+        Me.btnClearReturn = New EastFlow.FlatButton()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgCalc, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -341,7 +342,7 @@ Partial Class Form1
         Me.btnClear.LblText = "Clear All"
         Me.btnClear.Location = New System.Drawing.Point(490, 129)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(168, 31)
+        Me.btnClear.Size = New System.Drawing.Size(80, 31)
         Me.btnClear.TabIndex = 68
         Me.btnClear.textColor = System.Drawing.Color.Gray
         '
@@ -1369,12 +1370,26 @@ Partial Class Form1
         Me.Block1.xIndex = 0
         Me.Block1.yIndex = 0
         '
+        'btnClearReturn
+        '
+        Me.btnClearReturn.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnClearReturn.backgroundColorDimmingDuration = 75
+        Me.btnClearReturn.backgroundColorDimmingRatio = 0.12R
+        Me.btnClearReturn.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.btnClearReturn.LblText = "Clear Ret"
+        Me.btnClearReturn.Location = New System.Drawing.Point(576, 129)
+        Me.btnClearReturn.Name = "btnClearReturn"
+        Me.btnClearReturn.Size = New System.Drawing.Size(80, 31)
+        Me.btnClearReturn.TabIndex = 84
+        Me.btnClearReturn.textColor = System.Drawing.Color.Gray
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(691, 538)
+        Me.Controls.Add(Me.btnClearReturn)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -1559,4 +1574,5 @@ Partial Class Form1
     Friend WithEvents ThreadUpdateTimer As Timer
     Friend WithEvents btnClose As FlatButton
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents btnClearReturn As FlatButton
 End Class
