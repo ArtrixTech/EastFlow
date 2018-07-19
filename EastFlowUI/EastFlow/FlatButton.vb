@@ -109,7 +109,10 @@
     Private Sub onColorChangeTimerTick()
 
         If (Me.colorChangeDirection = True And Me.__dimFrame = Me.__dimMaxFrame) Or (Me.colorChangeDirection = False And Me.__dimFrame = 0) Then
+
             Me.colorChangeTimer.Stop()
+            renderColor()
+
         Else
 
             renderColor()
