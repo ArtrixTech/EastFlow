@@ -28,3 +28,17 @@ E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.ex
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.xml
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.pdb
 E:\ProjectFiles\BigProjects\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbprojResolveAssemblyReference.cache
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.exe.config
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.exe
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.pdb
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\bin\Release\EastFlow.xml
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Alert.resources
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Block.resources
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.FlatButton.resources
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Form1.resources
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.Resources.resources
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbproj.GenerateResource.cache
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbproj.CoreCompileInputs.cache
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.exe
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.xml
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.pdb

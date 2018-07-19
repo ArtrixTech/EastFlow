@@ -163,7 +163,7 @@ Partial Class Form1
         Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
         Me.RichTextBox1.Size = New System.Drawing.Size(80, 119)
         Me.RichTextBox1.TabIndex = 70
-        Me.RichTextBox1.Text = "1 2 3 4 1 2 3 4"
+        Me.RichTextBox1.Text = "Input"
         Me.RichTextBox1.WordWrap = False
         '
         'RichTextBox2
@@ -254,7 +254,7 @@ Partial Class Form1
         Me.PictureBox3.BackColor = System.Drawing.Color.Orange
         Me.PictureBox3.Location = New System.Drawing.Point(-4, 534)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(706, 4)
+        Me.PictureBox3.Size = New System.Drawing.Size(706, 8)
         Me.PictureBox3.TabIndex = 83
         Me.PictureBox3.TabStop = False
         '
