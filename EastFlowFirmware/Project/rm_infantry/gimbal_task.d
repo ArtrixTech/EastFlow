@@ -8,7 +8,7 @@
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\stm32f4xx.h
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\stm32f427xx.h
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\core_cm4.h
-.\rm_infantry\gimbal_task.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\core_cmInstr.h
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\cmsis_armcc.h
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\core_cmFunc.h
@@ -16,7 +16,7 @@
 .\rm_infantry\gimbal_task.o: ..\Inc\m3_inc\system_stm32f4xx.h
 .\rm_infantry\gimbal_task.o: ..\Inc\hal_inc\stm32f4xx_hal.h
 .\rm_infantry\gimbal_task.o: ..\Inc\hal_inc\Legacy/stm32_hal_legacy.h
-.\rm_infantry\gimbal_task.o: E:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\rm_infantry\gimbal_task.o: ..\Inc\hal_inc\stm32f4xx_hal_rcc_ex.h
 .\rm_infantry\gimbal_task.o: ..\Inc\hal_inc\stm32f4xx_hal_gpio.h
 .\rm_infantry\gimbal_task.o: ..\Inc\hal_inc\stm32f4xx_hal_gpio_ex.h
@@ -47,7 +47,7 @@
 .\rm_infantry\gimbal_task.o: ..\User\sys.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\cmsis_os.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\FreeRTOS.h
-.\rm_infantry\gimbal_task.o: E:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\rm_infantry\gimbal_task.o: ..\Inc\FreeRTOSConfig.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\projdefs.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\portable.h
@@ -60,5 +60,5 @@
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\queue.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\semphr.h
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\event_groups.h
-.\rm_infantry\gimbal_task.o: E:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-.\rm_infantry\gimbal_task.o: E:\keil\ARM\ARMCC\Bin\..\include\math.h
+.\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

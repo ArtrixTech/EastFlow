@@ -93,9 +93,59 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
+        Friend ReadOnly Property 图片1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("图片1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
         Friend ReadOnly Property 未标题_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("未标题-1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property 背景() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("背景", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property 背景_拷贝() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("背景 拷贝", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property 背景1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("背景1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property 背景2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("背景2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

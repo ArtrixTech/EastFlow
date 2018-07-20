@@ -23,9 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.LoadTimer = New System.Windows.Forms.Timer(Me.components)
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
@@ -33,11 +30,16 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CalcTimer = New System.Windows.Forms.Timer(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ThreadUpdateTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.imgCalc = New System.Windows.Forms.PictureBox()
-        Me.ThreadUpdateTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.btnClearReturn = New EastFlow.FlatButton()
         Me.btnClose = New EastFlow.FlatButton()
         Me.btnAbort = New EastFlow.FlatButton()
         Me.Alert1 = New EastFlow.Alert()
@@ -109,44 +111,12 @@ Partial Class Form1
         Me.Block4 = New EastFlow.Block()
         Me.Block2 = New EastFlow.Block()
         Me.Block1 = New EastFlow.Block()
-        Me.btnClearReturn = New EastFlow.FlatButton()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgCalc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 28.0!)
-        Me.Label1.Location = New System.Drawing.Point(21, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 50)
-        Me.Label1.TabIndex = 64
-        Me.Label1.Text = "East"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑 Light", 20.0!)
-        Me.Label2.Location = New System.Drawing.Point(98, 30)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 35)
-        Me.Label2.TabIndex = 65
-        Me.Label2.Text = "Flow"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑 Light", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(160, 40)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 20)
-        Me.Label3.TabIndex = 66
-        Me.Label3.Text = "东流的游戏"
         '
         'LoadTimer
         '
@@ -216,6 +186,61 @@ Partial Class Form1
         Me.Label5.TabIndex = 79
         Me.Label5.Text = "Sec"
         '
+        'ThreadUpdateTimer
+        '
+        Me.ThreadUpdateTimer.Interval = 500
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 28.0!)
+        Me.Label1.Location = New System.Drawing.Point(21, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 50)
+        Me.Label1.TabIndex = 64
+        Me.Label1.Text = "East"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑 Light", 20.0!)
+        Me.Label2.Location = New System.Drawing.Point(98, 30)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 35)
+        Me.Label2.TabIndex = 65
+        Me.Label2.Text = "Flow"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("微软雅黑 Light", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(160, 40)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(79, 20)
+        Me.Label3.TabIndex = 66
+        Me.Label3.Text = "东流的游戏"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.EastFlow.My.Resources.Resources.背景_拷贝
+        Me.PictureBox4.Location = New System.Drawing.Point(619, 5)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(22, 20)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 85
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Orange
+        Me.PictureBox3.Location = New System.Drawing.Point(-4, 549)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(706, 8)
+        Me.PictureBox3.TabIndex = 83
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Orange
@@ -245,18 +270,18 @@ Partial Class Form1
         Me.imgCalc.TabStop = False
         Me.imgCalc.Visible = False
         '
-        'ThreadUpdateTimer
+        'btnClearReturn
         '
-        Me.ThreadUpdateTimer.Interval = 500
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Orange
-        Me.PictureBox3.Location = New System.Drawing.Point(-4, 534)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(706, 8)
-        Me.PictureBox3.TabIndex = 83
-        Me.PictureBox3.TabStop = False
+        Me.btnClearReturn.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnClearReturn.backgroundColorDimmingDuration = 75
+        Me.btnClearReturn.backgroundColorDimmingRatio = 0.12R
+        Me.btnClearReturn.blockColor = System.Drawing.Color.WhiteSmoke
+        Me.btnClearReturn.LblText = "Clear Ret"
+        Me.btnClearReturn.Location = New System.Drawing.Point(576, 129)
+        Me.btnClearReturn.Name = "btnClearReturn"
+        Me.btnClearReturn.Size = New System.Drawing.Size(80, 31)
+        Me.btnClearReturn.TabIndex = 84
+        Me.btnClearReturn.textColor = System.Drawing.Color.Gray
         '
         'btnClose
         '
@@ -1370,25 +1395,13 @@ Partial Class Form1
         Me.Block1.xIndex = 0
         Me.Block1.yIndex = 0
         '
-        'btnClearReturn
-        '
-        Me.btnClearReturn.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.btnClearReturn.backgroundColorDimmingDuration = 75
-        Me.btnClearReturn.backgroundColorDimmingRatio = 0.12R
-        Me.btnClearReturn.blockColor = System.Drawing.Color.WhiteSmoke
-        Me.btnClearReturn.LblText = "Clear Ret"
-        Me.btnClearReturn.Location = New System.Drawing.Point(576, 129)
-        Me.btnClearReturn.Name = "btnClearReturn"
-        Me.btnClearReturn.Size = New System.Drawing.Size(80, 31)
-        Me.btnClearReturn.TabIndex = 84
-        Me.btnClearReturn.textColor = System.Drawing.Color.Gray
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(691, 538)
+        Me.ClientSize = New System.Drawing.Size(691, 553)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.btnClearReturn)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
@@ -1479,10 +1492,11 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgCalc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1552,9 +1566,6 @@ Partial Class Form1
     Friend WithEvents Block62 As Block
     Friend WithEvents Block63 As Block
     Friend WithEvents Block64 As Block
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents btnClear As FlatButton
     Friend WithEvents btnGen As FlatButton
     Friend WithEvents LoadTimer As Timer
@@ -1575,4 +1586,8 @@ Partial Class Form1
     Friend WithEvents btnClose As FlatButton
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents btnClearReturn As FlatButton
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

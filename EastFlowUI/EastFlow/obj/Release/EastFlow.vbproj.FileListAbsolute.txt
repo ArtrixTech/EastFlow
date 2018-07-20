@@ -42,3 +42,4 @@ E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbproj.CoreCo
 E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.exe
 E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.xml
 E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.pdb
+E:\Proj\EastFlow\EastFlow\EastFlowUI\EastFlow\obj\Release\EastFlow.vbprojAssemblyReference.cache

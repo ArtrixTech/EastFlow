@@ -158,5 +158,20 @@
   <ItemGroup>
     <None Include="Resources\alert-fill.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图片1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景 拷贝.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
