@@ -235,7 +235,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Orange
-        Me.PictureBox3.Location = New System.Drawing.Point(-4, 549)
+        Me.PictureBox3.Location = New System.Drawing.Point(-4, 541)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(706, 8)
         Me.PictureBox3.TabIndex = 83
@@ -1400,7 +1400,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(691, 553)
+        Me.ClientSize = New System.Drawing.Size(691, 545)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.btnClearReturn)
         Me.Controls.Add(Me.PictureBox3)
