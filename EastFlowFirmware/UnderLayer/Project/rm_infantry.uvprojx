@@ -417,6 +417,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\algorithm\ramp.c</FilePath>
             </File>
+            <File>
+              <FileName>mixed_pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\algorithm\mixed_pid.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

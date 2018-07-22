@@ -56,4 +56,5 @@
 .\rm_infantry\execute_task.o: ..\User\driver\calibrate.h
 .\rm_infantry\execute_task.o: ..\User\algorithm\pid.h
 .\rm_infantry\execute_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\rm_infantry\execute_task.o: ..\User\algorithm\mixed_pid.h
 .\rm_infantry\execute_task.o: ..\User\sys.h
