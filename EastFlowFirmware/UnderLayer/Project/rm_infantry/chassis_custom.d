@@ -41,6 +41,7 @@
 .\rm_infantry\chassis_custom.o: ..\User\driver\uart_device.h
 .\rm_infantry\chassis_custom.o: ..\User\driver\keyboard.h
 .\rm_infantry\chassis_custom.o: ..\User\algorithm\pid.h
+.\rm_infantry\chassis_custom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\rm_infantry\chassis_custom.o: ..\User\sys.h
 .\rm_infantry\chassis_custom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\rm_infantry\chassis_custom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

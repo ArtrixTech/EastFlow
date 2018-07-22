@@ -38,4 +38,5 @@
 .\rm_infantry\shoot_custom.o: ..\User\rm_hal_lib.h
 .\rm_infantry\shoot_custom.o: ..\User\driver\can_device.h
 .\rm_infantry\shoot_custom.o: ..\User\algorithm\pid.h
+.\rm_infantry\shoot_custom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\rm_infantry\shoot_custom.o: ..\User\sys.h

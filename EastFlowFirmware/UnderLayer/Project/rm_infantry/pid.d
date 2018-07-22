@@ -35,3 +35,4 @@
 .\rm_infantry\pid.o: ..\Inc\hal_inc\stm32f4xx_hal_tim.h
 .\rm_infantry\pid.o: ..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h
 .\rm_infantry\pid.o: ..\Inc\hal_inc\stm32f4xx_hal_uart.h
+.\rm_infantry\pid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

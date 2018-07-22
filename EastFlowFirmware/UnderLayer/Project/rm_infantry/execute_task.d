@@ -55,4 +55,5 @@
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\event_groups.h
 .\rm_infantry\execute_task.o: ..\User\driver\calibrate.h
 .\rm_infantry\execute_task.o: ..\User\algorithm\pid.h
+.\rm_infantry\execute_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\rm_infantry\execute_task.o: ..\User\sys.h
