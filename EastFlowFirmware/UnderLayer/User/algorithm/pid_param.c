@@ -45,8 +45,8 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	pid_param_2006.spd_ki=1.5;
 	pid_param_2006.spd_kd=0;
 
-	pid_param_2006.loc_output_max=15000;
-	pid_param_2006.spd_output_max=20000;
+	pid_param_2006.loc_output_max=10000;
+	pid_param_2006.spd_output_max=7000;
 	
 	// -- 3508 Motor initialize
 	

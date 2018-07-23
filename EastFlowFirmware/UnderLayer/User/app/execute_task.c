@@ -18,8 +18,18 @@ void execute_task(const void *argu)
 		mixed_pid_init(&m,motor_type_2006);
 		
 		while (1){
-			current[0]=	mixed_pid_calc(&m,pitch_motor.total_angle,pitch_motor.speed_rpm,(rc.ch2/RC_MAX_VALUE*90*36*32));
+			
+			float anticipation=0;
+			
+			if (rc.sw1==RC_DN)anticipation=360*1;
+			if (rc.sw1==RC_UP)anticipation=-360*1;
+
+			
+			
+			current[0]=	mixed_pid_calc(&m,pitch_motor.total_angle,pitch_motor.speed_rpm,anticipation*36);
 			send_chassis_moto_current(current);
+			
+			
 		}
 
 }
