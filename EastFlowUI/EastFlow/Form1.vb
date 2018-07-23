@@ -5,6 +5,8 @@ Public Class Form1
 
     Dim blocksCoor(8, 8) As Block
 
+    Dim generatingFlag As Boolean = False
+
     Function generateCommandInput()
 
         Dim returnStr = ""
@@ -29,6 +31,8 @@ Public Class Form1
             Next
             returnStr += vbCrLf
         Next
+
+        generatingFlag = True
 
         Return returnStr
 
@@ -79,6 +83,8 @@ Public Class Form1
 
     End Sub
     Private Sub Calculate()
+
+        RichTextBox1.Text = generateCommandInput()
 
         runningProcess = New ShellOperation("EastFlowAlgo.exe")
 
@@ -164,13 +170,18 @@ Public Class Form1
     End Sub
 
     Private Sub btnGen_Click(sender As Object, e As EventArgs) Handles btnGen.Click
-        RichTextBox2.Text = generateCommandInput()
+        RichTextBox1.Text = generateCommandInput()
     End Sub
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
-        If RichTextBox1.TextLength = 128 Or RichTextBox1.TextLength = 127 Then
-            loadFromText(sender, e)
+        If Not generatingFlag Then
+
+            If RichTextBox1.TextLength = 128 Or RichTextBox1.TextLength = 127 Then
+                loadFromText(sender, e)
+            End If
+
         End If
+        generatingFlag = False
     End Sub
 
     Private Sub loadFromText(sender As Object, e As EventArgs) Handles btnLoad.Click

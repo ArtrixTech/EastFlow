@@ -20,7 +20,7 @@
     Private colorChangeDirection As Boolean = True ' True as positive direction, and False as negative
 
     Private colorList() As Color = {Color.FromArgb(255, 255, 177, 153), Color.FromArgb(255, 132, 220, 185),
-       Color.FromArgb(255, 143, 211, 244), Color.FromArgb(255, 251, 237, 150)} ' RGBY
+       Color.FromArgb(255, 143, 211, 244), Color.FromArgb(255, 237, 214, 140)} ' RGBY
     Private colorIndex = -1
     Private colorIndex_Max = 3
 
