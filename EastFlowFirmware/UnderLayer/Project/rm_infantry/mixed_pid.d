@@ -37,3 +37,4 @@
 .\rm_infantry\mixed_pid.o: ..\Inc\hal_inc\stm32f4xx_hal_uart.h
 .\rm_infantry\mixed_pid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\rm_infantry\mixed_pid.o: ..\User\algorithm\pid.h
+.\rm_infantry\mixed_pid.o: ..\User\algorithm\pid_param.h

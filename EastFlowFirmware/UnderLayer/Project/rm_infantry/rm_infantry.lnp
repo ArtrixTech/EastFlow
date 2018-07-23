@@ -6,6 +6,7 @@
 ".\rm_infantry\pid.o"
 ".\rm_infantry\ramp.o"
 ".\rm_infantry\mixed_pid.o"
+".\rm_infantry\pid_param.o"
 ".\rm_infantry\startup.o"
 ".\rm_infantry\gimbal_task.o"
 ".\rm_infantry\chassis_task.o"
