@@ -422,6 +422,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\algorithm\mixed_pid.c</FilePath>
             </File>
+            <File>
+              <FileName>pid_param.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\algorithm\pid_param.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
