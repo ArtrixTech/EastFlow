@@ -38,7 +38,7 @@ void execute_task(const void *argu)
 			if (rc.sw1==RC_DN)anticipation=dist_to_deg(20);
 			if (rc.sw1==RC_UP)anticipation=dist_to_deg(-20);
 
-			anti_cur=bias_angle(anticipation*REDUCTION_GEAR_RATIO);
+			anti_angle=bias_angle(anticipation*REDUCTION_GEAR_RATIO);
 			current[0]=	mixed_pid_calc(&m,moto_grip.total_angle,moto_grip.speed_rpm,anti_angle);
 			send_grip_moto_current(current);
 			
