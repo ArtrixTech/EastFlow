@@ -49,7 +49,7 @@ def analyze_block(block):
     return ratio
 
 # ret, frame = cap.read()
-frame = cv2.imread("t2.jpg")
+frame = cv2.imread("Image.jpg")
 
 frame_pil = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
