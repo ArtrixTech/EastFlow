@@ -128,7 +128,7 @@ void pc_kb_hook(void)
   else if (rc.kb.bit.CTRL)
   {
     km.move_mode = SLOW_MODE;
-    km.max_spd = 2500;
+    km.max_spd = 1500;			// Speed Limited, derive val is 2500
   }
   else
   {

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\rm_infantry\rm_infantry.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\rm_infantry\rm_infantry.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060183: Last Updated: Tue Jul 24 17:31:18 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060183: Last Updated: Wed Jul 25 03:38:18 2018
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -857,7 +857,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ed]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_led_io
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_led_io
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_write_reg
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_read_regs
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_read_reg
@@ -875,7 +875,7 @@ Global Symbols
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Transmit
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Init
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_task
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterInitMode
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_WaitForSynchro
@@ -1675,7 +1675,7 @@ Global Symbols
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
 </UL>
 
 <P><STRONG><a name="[114]"></a>__hardfp_atan</STRONG> (Thumb, 622 bytes, Stack size 48 bytes, atan.o(i.__hardfp_atan))
@@ -1707,7 +1707,7 @@ Global Symbols
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
 </UL>
 
 <P><STRONG><a name="[118]"></a>__hardfp_sin</STRONG> (Thumb, 180 bytes, Stack size 32 bytes, sin.o(i.__hardfp_sin))
@@ -1730,7 +1730,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
 </UL>
 
 <P><STRONG><a name="[119]"></a>__ieee754_rem_pio2</STRONG> (Thumb, 938 bytes, Stack size 120 bytes, rred.o(i.__ieee754_rem_pio2))
@@ -1854,7 +1854,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_ConfigFilter
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[128]"></a>can_receive_start</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bsp_can.o(i.can_receive_start))
@@ -1862,11 +1862,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Receive_IT
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[14d]"></a>can_recv_callback_register</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, bsp_can.o(i.can_recv_callback_register))
-<BR><BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[12a]"></a>chassis_close_loop_calculate</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, chassis_custom.o(i.chassis_close_loop_calculate))
@@ -1966,15 +1966,17 @@ Global Symbols
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can1_recv_callback
 </UL>
 
-<P><STRONG><a name="[6c]"></a>execute_task</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, execute_task.o(i.execute_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = execute_task &rArr; mixed_pid_init &rArr; pid_param_register &rArr; __aeabi_memcpy4
+<P><STRONG><a name="[6c]"></a>execute_task</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, execute_task.o(i.execute_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = execute_task &rArr; mixed_pid_init &rArr; pid_param_register &rArr; __aeabi_memcpy4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_param_init
+<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_led_io
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_param_init
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixed_pid_init
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixed_pid_calc
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_grip_moto_current
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixed_pid_calc
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_grip_moto_current
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist_to_deg
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bias_angle
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup.o(.constdata)
 </UL>
@@ -1991,24 +1993,24 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_task
 </UL>
 
-<P><STRONG><a name="[142]"></a>imu_AHRS_update</STRONG> (Thumb, 1938 bytes, Stack size 136 bytes, bsp_imu.o(i.imu_AHRS_update))
+<P><STRONG><a name="[143]"></a>imu_AHRS_update</STRONG> (Thumb, 1938 bytes, Stack size 136 bytes, bsp_imu.o(i.imu_AHRS_update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = imu_AHRS_update &rArr; __hardfp_sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;invSqrt
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;invSqrt
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_task
 </UL>
 
-<P><STRONG><a name="[145]"></a>imu_attitude_update</STRONG> (Thumb, 770 bytes, Stack size 40 bytes, bsp_imu.o(i.imu_attitude_update))
+<P><STRONG><a name="[146]"></a>imu_attitude_update</STRONG> (Thumb, 770 bytes, Stack size 40 bytes, bsp_imu.o(i.imu_attitude_update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = imu_attitude_update &rArr; __hardfp_atan2 &rArr; atan &rArr; __hardfp_atan &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_asin
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
@@ -2020,16 +2022,16 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_get_data
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_get_data
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos.o(.constdata)
 </UL>
-<P><STRONG><a name="[147]"></a>init_setup</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, startup.o(i.init_setup))
+<P><STRONG><a name="[148]"></a>init_setup</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, startup.o(i.init_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = init_setup &rArr; uart_init &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_NVIC_SetPriority &rArr; NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_led_io
+<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_led_io
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_recv_callback_register
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_receive_start
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
@@ -2041,8 +2043,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[143]"></a>invSqrt</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, bsp_imu.o(i.invSqrt))
-<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<P><STRONG><a name="[144]"></a>invSqrt</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, bsp_imu.o(i.invSqrt))
+<BR><BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
 </UL>
 
 <P><STRONG><a name="[14e]"></a>ist8310_init</STRONG> (Thumb, 256 bytes, Stack size 8 bytes, bsp_imu.o(i.ist8310_init))
@@ -2061,7 +2063,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 264 + Unknown Stack Size
 <LI>Call Chain = main &rArr; MX_FREERTOS_Init &rArr; sys_start_task &rArr; osThreadCreate &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
 <LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelStart
@@ -2092,7 +2094,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[140]"></a>mixed_pid_calc</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, mixed_pid.o(i.mixed_pid_calc))
+<P><STRONG><a name="[141]"></a>mixed_pid_calc</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, mixed_pid.o(i.mixed_pid_calc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = mixed_pid_calc &rArr; pid_calc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_calc
@@ -2101,7 +2103,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[13f]"></a>mixed_pid_init</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, mixed_pid.o(i.mixed_pid_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = mixed_pid_init &rArr; pid_param_register &rArr; __aeabi_memcpy4
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = mixed_pid_init &rArr; pid_param_register &rArr; __aeabi_memcpy4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_param_register
 </UL>
@@ -2125,7 +2127,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_task
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;execute_task
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_task
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartDefaultTask
 </UL>
 
@@ -2182,7 +2185,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abs_limit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_task
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixed_pid_calc
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mixed_pid_calc
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_close_loop_calculate
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_twist_handle
 </UL>
@@ -2192,12 +2195,12 @@ Global Symbols
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_pid_param_init
 </UL>
 
-<P><STRONG><a name="[13e]"></a>pid_param_init</STRONG> (Thumb, 146 bytes, Stack size 0 bytes, pid_param.o(i.pid_param_init))
+<P><STRONG><a name="[13e]"></a>pid_param_init</STRONG> (Thumb, 178 bytes, Stack size 0 bytes, pid_param.o(i.pid_param_init))
 <BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;execute_task
 </UL>
 
-<P><STRONG><a name="[156]"></a>pid_param_register</STRONG> (Thumb, 264 bytes, Stack size 64 bytes, pid_param.o(i.pid_param_register))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = pid_param_register &rArr; __aeabi_memcpy4
+<P><STRONG><a name="[156]"></a>pid_param_register</STRONG> (Thumb, 264 bytes, Stack size 72 bytes, pid_param.o(i.pid_param_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = pid_param_register &rArr; __aeabi_memcpy4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_init
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
@@ -2225,7 +2228,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_flash
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[178]"></a>read_flash</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, bsp_flash.o(i.read_flash))
@@ -2261,7 +2264,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_task
 </UL>
 
-<P><STRONG><a name="[141]"></a>send_grip_moto_current</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, can_device.o(i.send_grip_moto_current))
+<P><STRONG><a name="[142]"></a>send_grip_moto_current</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, can_device.o(i.send_grip_moto_current))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = send_grip_moto_current &rArr; write_can &rArr; HAL_CAN_Transmit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_can
@@ -2299,7 +2302,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[14c]"></a>uart_receive_start</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, bsp_uart.o(i.uart_receive_start))
@@ -2307,11 +2310,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_receive_no_dma_it
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[14b]"></a>uart_recv_callback_register</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, bsp_uart.o(i.uart_recv_callback_register))
-<BR><BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[103]"></a>uart_recv_interrupt_callback</STRONG> (Thumb, 1084 bytes, Stack size 16 bytes, bsp_uart.o(i.uart_recv_interrupt_callback))
@@ -2442,7 +2445,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Transmit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_grip_moto_current
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_grip_moto_current
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_chassis_moto_zero_current
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_chassis_moto_current
 </UL>
@@ -2455,12 +2458,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_num
 </UL>
 
-<P><STRONG><a name="[148]"></a>write_led_io</STRONG> (Thumb, 206 bytes, Stack size 16 bytes, bsp_io.o(i.write_led_io))
+<P><STRONG><a name="[140]"></a>write_led_io</STRONG> (Thumb, 206 bytes, Stack size 16 bytes, bsp_io.o(i.write_led_io))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = write_led_io
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;execute_task
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_setup
 </UL>
 
 <P><STRONG><a name="[17f]"></a>xPortStartScheduler</STRONG> (Thumb, 288 bytes, Stack size 16 bytes, port.o(i.xPortStartScheduler))
@@ -2560,8 +2564,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_twist_handle
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
 </UL>
 
 <P><STRONG><a name="[186]"></a>_d2f</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f), UNUSED)
@@ -2631,7 +2635,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_dmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_twist_handle
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
@@ -2706,11 +2710,11 @@ Global Symbols
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd1
 </UL>
 
-<P><STRONG><a name="[144]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
+<P><STRONG><a name="[145]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
+<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_attitude_update
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imu_AHRS_update
 </UL>
 
 <P><STRONG><a name="[192]"></a>_f2d</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d), UNUSED)
@@ -2882,7 +2886,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ist8310_init
 </UL>
 
-<P><STRONG><a name="[146]"></a>mpu_get_data</STRONG> (Thumb, 460 bytes, Stack size 8 bytes, bsp_imu.o(i.mpu_get_data))
+<P><STRONG><a name="[147]"></a>mpu_get_data</STRONG> (Thumb, 460 bytes, Stack size 8 bytes, bsp_imu.o(i.mpu_get_data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = mpu_get_data &rArr; mpu_read_regs &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_read_regs
@@ -2925,7 +2929,7 @@ Local Symbols
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_offset_cal
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_get_data
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mpu_get_data
 </UL>
 
 <P><STRONG><a name="[14f]"></a>mpu_write_reg</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, bsp_imu.o(i.mpu_write_reg))

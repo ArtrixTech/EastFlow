@@ -37,6 +37,18 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	
 	pid_param_2006.is_single_spd=false;
 	
+	pid_param_2006.loc_kp=5;
+	pid_param_2006.loc_ki=0.04;
+	pid_param_2006.loc_kd=4;
+	pid_param_2006.loc_imax=10;
+	
+	pid_param_2006.spd_kp=11;
+	pid_param_2006.spd_ki=0;
+	pid_param_2006.spd_kd=1;
+	pid_param_2006.spd_imax=50;
+	
+	/* -- No OSDELAY --
+	
 	pid_param_2006.loc_kp=4;
 	pid_param_2006.loc_ki=0.1;
 	pid_param_2006.loc_kd=0;
@@ -44,8 +56,10 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	pid_param_2006.spd_kp=15;
 	pid_param_2006.spd_ki=1.5;
 	pid_param_2006.spd_kd=0;
+	
+	*/
 
-	pid_param_2006.loc_output_max=12000;
+	pid_param_2006.loc_output_max=20000;//12000
 	pid_param_2006.spd_output_max=20000;
 	
 	// -- 3508 Motor initialize
@@ -55,10 +69,12 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	pid_param_3508.loc_kp=2.0f;
 	pid_param_3508.loc_ki=0.1;
 	pid_param_3508.loc_kd=50.0f;
+	pid_param_3508.loc_imax=0;
 	
 	pid_param_3508.spd_kp=1.0f;
 	pid_param_3508.spd_ki=0.0f;
 	pid_param_3508.spd_kd=1.0f;
+	pid_param_3508.spd_imax=0;
 
 	pid_param_3508.loc_output_max=12000;
 	pid_param_3508.spd_output_max=12000;
@@ -72,13 +88,13 @@ void pid_param_register(pid_t *pid_loc,pid_t *pid_spd,motor_type type){
 	{
 		case (motor_type_2006):{
 			pid_param param=pid_param_2006;
-			pid_init(pid_loc,param.loc_output_max,param.loc_ki,param.loc_kp,param.loc_ki,param.loc_kd);
-			pid_init(pid_spd,param.spd_output_max,param.spd_ki,param.spd_kp,param.spd_ki,param.spd_kd);
+			pid_init(pid_loc,param.loc_output_max,param.loc_imax,param.loc_kp,param.loc_ki,param.loc_kd);
+			pid_init(pid_spd,param.spd_output_max,param.spd_imax,param.spd_kp,param.spd_ki,param.spd_kd);
 		}break;
 		case (motor_type_3508):{
 			pid_param param=pid_param_3508;
-			pid_init(pid_loc,param.loc_output_max,param.loc_ki,param.loc_kp,param.loc_ki,param.loc_kd);
-			pid_init(pid_spd,param.spd_output_max,param.spd_ki,param.spd_kp,param.spd_ki,param.spd_kd);
+			pid_init(pid_loc,param.loc_output_max,param.loc_imax,param.loc_kp,param.loc_ki,param.loc_kd);
+			pid_init(pid_spd,param.spd_output_max,param.spd_imax,param.spd_kp,param.spd_ki,param.spd_kd);
 		}break;
 	}
 	
@@ -91,11 +107,11 @@ void pid_param_register_single_spd(pid_t *pid_spd,motor_type type){
 	{
 		case (motor_type_2006):{
 			pid_param param=pid_param_2006;
-			pid_init(pid_spd,param.spd_output_max,param.spd_ki,param.spd_kp,param.spd_ki,param.spd_kd);
+			pid_init(pid_spd,param.spd_output_max,param.spd_imax,param.spd_kp,param.spd_ki,param.spd_kd);
 		}break;
 		case (motor_type_3508):{
 			pid_param param=pid_param_3508;
-			pid_init(pid_spd,param.spd_output_max,param.spd_ki,param.spd_kp,param.spd_ki,param.spd_kd);
+			pid_init(pid_spd,param.spd_output_max,param.spd_imax,param.spd_kp,param.spd_ki,param.spd_kd);
 		}break;
 	}
 	

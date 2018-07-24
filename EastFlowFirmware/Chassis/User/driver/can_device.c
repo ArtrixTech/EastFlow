@@ -32,15 +32,14 @@
 #include "detect_task.h"
 #include "sys.h"
 
-/* 云台电机 */
+/* Gimbal Motor */
 moto_measure_t moto_pit;
 moto_measure_t moto_yaw;
-/* 拨弹电机 */
+/* Trigger Motor */
 moto_measure_t moto_trigger;
-/* 底盘电机 */
+/* Chassis Motor */
 moto_measure_t moto_chassis[4];
-/* 外围模块测试电机 */
-
+/* Gripper Motor */
 moto_measure_t moto_grip;
 
 /**

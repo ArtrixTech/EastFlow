@@ -40,10 +40,12 @@ typedef struct{
 	float loc_kp;
 	float loc_ki;
 	float loc_kd;
+	float loc_imax;
 	
 	float spd_kp;
 	float spd_ki;
 	float spd_kd;
+	float spd_imax;
 	
 	float single_spd_kp;
 	float single_spd_ki;
