@@ -45,8 +45,8 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	pid_param_2006.spd_ki=1.5;
 	pid_param_2006.spd_kd=0;
 
-	pid_param_2006.loc_output_max=10000;
-	pid_param_2006.spd_output_max=7000;
+	pid_param_2006.loc_output_max=12000;
+	pid_param_2006.spd_output_max=20000;
 	
 	// -- 3508 Motor initialize
 	
@@ -60,8 +60,8 @@ void pid_param_init(){								// Must do this function before using all the PID 
 	pid_param_3508.spd_ki=0.0f;
 	pid_param_3508.spd_kd=1.0f;
 
-	pid_param_3508.loc_output_max=8700;
-	pid_param_3508.spd_output_max=10000;
+	pid_param_3508.loc_output_max=12000;
+	pid_param_3508.spd_output_max=12000;
 
 }
 

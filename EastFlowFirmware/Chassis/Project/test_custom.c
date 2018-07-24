@@ -11,7 +11,7 @@ uint8_t key1;
 
 void test_moto_control(void)
 {
-   //LED控制函数
+   /*/LED控制函数
 	 write_led_io(LED_IO1,LED_ON );	
 	
    //电机的速度给定
@@ -46,7 +46,7 @@ void test_moto_control(void)
 //		{
 //			 set_test_motor_current(test_moto_current);
 //			}
-			
+			*/
 			
 }
    //电机初始化参数设定
