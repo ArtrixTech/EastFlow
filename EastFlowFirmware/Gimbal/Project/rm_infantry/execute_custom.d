@@ -1,5 +1,6 @@
 .\rm_infantry\execute_custom.o: ..\User\app\execute_custom.c
-.\rm_infantry\execute_custom.o: ..\User\app\execute_task.h
+.\rm_infantry\execute_custom.o: ..\User\driver\can_device.h
+.\rm_infantry\execute_custom.o: ..\User\rm_hal_lib.h
 .\rm_infantry\execute_custom.o: ..\Inc\hal_inc\stm32f4xx_hal.h
 .\rm_infantry\execute_custom.o: ..\Inc\stm32f4xx_hal_conf.h
 .\rm_infantry\execute_custom.o: ..\Inc\main.h
@@ -35,8 +36,7 @@
 .\rm_infantry\execute_custom.o: ..\Inc\hal_inc\stm32f4xx_hal_tim.h
 .\rm_infantry\execute_custom.o: ..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h
 .\rm_infantry\execute_custom.o: ..\Inc\hal_inc\stm32f4xx_hal_uart.h
-.\rm_infantry\execute_custom.o: ..\User\driver\can_device.h
-.\rm_infantry\execute_custom.o: ..\User\rm_hal_lib.h
-.\rm_infantry\execute_custom.o: ..\User\driver\uart_device.h
+.\rm_infantry\execute_custom.o: ..\User\app\execute_task.h
 .\rm_infantry\execute_custom.o: ..\User\algorithm\pid.h
 .\rm_infantry\execute_custom.o: ..\User\sys.h
+.\rm_infantry\execute_custom.o: ..\User\driver\uart_device.h

@@ -40,6 +40,7 @@
 .\rm_infantry\startup.o: ..\User\app\detect_task.h
 .\rm_infantry\startup.o: ..\User\app\gimbal_task.h
 .\rm_infantry\startup.o: ..\User\app\execute_task.h
+.\rm_infantry\startup.o: ..\User\driver\can_device.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\cmsis_os.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\FreeRTOS.h
 .\rm_infantry\startup.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -55,7 +56,6 @@
 .\rm_infantry\startup.o: ..\Inc\os_inc\queue.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\semphr.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\event_groups.h
-.\rm_infantry\startup.o: ..\User\driver\can_device.h
 .\rm_infantry\startup.o: ..\User\driver\uart_device.h
 .\rm_infantry\startup.o: ..\User\driver\calibrate.h
 .\rm_infantry\startup.o: ..\User\sys.h

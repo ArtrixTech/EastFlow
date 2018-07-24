@@ -1,5 +1,5 @@
 .\rm_infantry\execute_task.o: ..\User\app\execute_task.c
-.\rm_infantry\execute_task.o: ..\User\app\execute_task.h
+.\rm_infantry\execute_task.o: ..\User\driver\calibrate.h
 .\rm_infantry\execute_task.o: ..\Inc\hal_inc\stm32f4xx_hal.h
 .\rm_infantry\execute_task.o: ..\Inc\stm32f4xx_hal_conf.h
 .\rm_infantry\execute_task.o: ..\Inc\main.h
@@ -37,7 +37,6 @@
 .\rm_infantry\execute_task.o: ..\Inc\hal_inc\stm32f4xx_hal_uart.h
 .\rm_infantry\execute_task.o: ..\User\driver\can_device.h
 .\rm_infantry\execute_task.o: ..\User\rm_hal_lib.h
-.\rm_infantry\execute_task.o: ..\User\driver\uart_device.h
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\cmsis_os.h
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\FreeRTOS.h
 .\rm_infantry\execute_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -53,6 +52,7 @@
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\queue.h
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\semphr.h
 .\rm_infantry\execute_task.o: ..\Inc\os_inc\event_groups.h
-.\rm_infantry\execute_task.o: ..\User\driver\calibrate.h
+.\rm_infantry\execute_task.o: ..\User\app\execute_task.h
 .\rm_infantry\execute_task.o: ..\User\algorithm\pid.h
 .\rm_infantry\execute_task.o: ..\User\sys.h
+.\rm_infantry\execute_task.o: ..\User\driver\uart_device.h
