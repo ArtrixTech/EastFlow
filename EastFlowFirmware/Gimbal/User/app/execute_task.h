@@ -2,11 +2,29 @@
 #define __EXECUTE_TASK_H__
 
 #include "stm32f4xx_hal.h"
+#include "rm_hal_lib.h"
+#include "can_device.h"
 
 void execute_task(const void* argu);
 
-void test_moto_init(void);
-void test_moto_control(void);
+/* lift moto */
+extern int16_t lift_moto_current[1];
+
+void lift_moto_init(void);
+void lift_moto_control(void);
+
+void send_lift_moto_current(int16_t lift_moto_current[]);
+/* lift moto */
+
+
+/* pinch moto */
+extern int16_t pinch_moto_current[1];
+
+void pinch_moto_init(void);
+void pinch_moto_control(void);
+
+void send_pinch_moto_current(int16_t pinch_moto_current[]);
+	
+/* pinch moto */
 
 #endif
-

@@ -13,7 +13,7 @@
 ".\rm_infantry\chassis_custom.o"
 ".\rm_infantry\gimbal_custom.o"
 ".\rm_infantry\shoot_custom.o"
-".\rm_infantry\test_custom.o"
+".\rm_infantry\execute_custom.o"
 ".\rm_infantry\stm32f4xx_it.o"
 "..\Inc\rm_infantry1_3.lib"
 --strict --scatter ".\rm_infantry\rm_infantry.sct"

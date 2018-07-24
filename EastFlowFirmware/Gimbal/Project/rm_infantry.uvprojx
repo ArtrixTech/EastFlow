@@ -473,9 +473,9 @@
               <FilePath>..\User\sys.h</FilePath>
             </File>
             <File>
-              <FileName>test_custom.c</FileName>
+              <FileName>execute_custom.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\test_custom.c</FilePath>
+              <FilePath>..\User\app\execute_custom.c</FilePath>
             </File>
           </Files>
         </Group>

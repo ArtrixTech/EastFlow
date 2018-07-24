@@ -39,18 +39,12 @@ moto_measure_t moto_yaw;
 moto_measure_t moto_trigger;
 /* 底盘电机 */
 moto_measure_t moto_chassis[4];
-/* 外围模块测试电机 */
-moto_measure_t moto_test;
-
-moto_measure_t pitch_motor;
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
   * @param     recv_id: CAN1 接收到的数据 ID
   * @param     data: 接收到的 CAN1 数据指针
   */
-				int c=0;
-
 void can1_recv_callback(uint32_t recv_id, uint8_t data[])
 {
   switch (recv_id)
@@ -103,20 +97,6 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
       err_detector_hook(TRIGGER_MOTO_OFFLINE);
     }
     break;
-    case CAN_pitch_motor_ID:
-    {
-			 pitch_motor.msg_cnt++;
-      pitch_motor.msg_cnt <= 10 ? get_moto_offset(&pitch_motor, data) : encoder_data_handle(&pitch_motor, data);
-      //err_detector_hook(TRIGGER_MOTO_OFFLINE);
-			c++;
-			/*
-      pitch_motor.msg_cnt++ <= 50 ? get_moto_offset(&pitch_motor, data) : \
-      encoder_data_handle(&pitch_motor, data);
-      */
-    }
-    break;
-		
-		
 		
     default:
     {
@@ -169,12 +149,12 @@ static void encoder_data_handle(moto_measure_t *ptr, uint8_t data[])
 
   ptr->speed_rpm     = (int16_t)(data[2] << 8 | data[3]);
 
-  if (ptr->ecd - ptr->last_ecd > 4096)
+  if (ptr->ecd - ptr->last_ecd > 5000)
   {
     ptr->round_cnt--;
     ptr->ecd_raw_rate = ptr->ecd - ptr->last_ecd - 8192;
   }
-  else if (ptr->ecd - ptr->last_ecd < -4096)
+  else if (ptr->ecd - ptr->last_ecd < -5000)
   {
     ptr->round_cnt++;
     ptr->ecd_raw_rate = ptr->ecd - ptr->last_ecd + 8192;
@@ -266,18 +246,4 @@ void send_gimbal_moto_zero_current(void)
   data[7] = 0;
   
   write_can(GIMBAL_CAN, CAN_GIMBAL_ID, data);
-}
-void set_test_motor_current(int16_t test_moto_current[])
-{
-  static uint8_t data[8];
-  
-  data[0] = 0;
-  data[1] = 0;
-  data[2] = 0;
-  data[3] = 0;
-  data[4] = 0;
-  data[5] = 0;
-  data[6] = test_moto_current[0] >> 8;;
-  data[7] = test_moto_current[0];;
-  write_can(CHASSIS_CAN, CAN_GIMBAL_ID, data);
 }

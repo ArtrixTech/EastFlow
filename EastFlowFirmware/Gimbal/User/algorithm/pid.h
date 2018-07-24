@@ -108,6 +108,5 @@ extern pid_t pid_chassis_angle;
     //拨弹电机 PID 结构体定义
 extern pid_t pid_trigger;
 extern pid_t pid_trigger_speed;
-    
-extern pid_t pid_test_moto;
+
 #endif
