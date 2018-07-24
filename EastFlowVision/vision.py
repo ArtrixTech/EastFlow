@@ -48,89 +48,88 @@ def analyze_block(block):
 
     return ratio
 
+# ret, frame = cap.read()
+frame = cv2.imread("t2.jpg")
 
-while (1):
+frame_pil = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
-    # ret, frame = cap.read()
-    frame = cv2.imread("t2.jpg")
+frame_height, frame_width, depth = frame.shape
+rect_width, rect_height = 350, 350
 
-    frame_pil = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+blocks_count_x = 8
+blocks_count_y = 8
 
-    frame_height, frame_width, depth = frame.shape
-    rect_width, rect_height = 350, 350
+blocks_img = [[0 for i in range(blocks_count_y)] for i in range(blocks_count_x)]
 
-    blocks_count_x = 8
-    blocks_count_y = 8
+padding_x, padding_y = (10, 10)
+block_width, block_height = ((rect_width - padding_x) / blocks_count_x, (rect_height - padding_y) / blocks_count_y)
 
-    blocks_img = [[0 for i in range(blocks_count_y)] for i in range(blocks_count_x)]
+cut_rect = [int(frame_width / 2 - (rect_width - 2 * padding_x) / 2),
+            int(frame_height / 2 - (rect_height - 2 * padding_y) / 2),
+            int(frame_width / 2 - (rect_width - 2 * padding_x) / 2) + rect_width - 2 * padding_x,
+            int(frame_height / 2 - (rect_height - 2 * padding_y) / 2) + rect_height - 2 * padding_y]
 
-    padding_x, padding_y = (10, 10)
-    block_width, block_height = ((rect_width - padding_x) / blocks_count_x, (rect_height - padding_y) / blocks_count_y)
+draw_rect = [int(frame_width / 2 - rect_width / 2),
+             int(frame_height / 2 - rect_height / 2),
+             rect_width, rect_height]
 
-    cut_rect = [int(frame_width / 2 - (rect_width - 2 * padding_x) / 2),
-                int(frame_height / 2 - (rect_height - 2 * padding_y) / 2),
-                int(frame_width / 2 - (rect_width - 2 * padding_x) / 2) + rect_width - 2 * padding_x,
-                int(frame_height / 2 - (rect_height - 2 * padding_y) / 2) + rect_height - 2 * padding_y]
+cut_img = frame_pil  # .crop(cut_rect)
+thres = 0.38
 
-    draw_rect = [int(frame_width / 2 - rect_width / 2),
-                 int(frame_height / 2 - rect_height / 2),
-                 rect_width, rect_height]
+res = []
+return_str = ""
+for y in range(blocks_count_y):
+    line = ""
+    for x in range(blocks_count_x):
+        blocks_img[x][y] = crop_block(cut_img, x, y)
+        ratio = analyze_block(blocks_img[x][y])
+        if ratio[0] > thres - 0.02 and ratio[1] > thres - 0.02 and ratio[2] < thres:
+            res.append((x, y, 3))
+            line += "4 "
+        elif ratio[0] > thres:
+            res.append((x, y, 0))
+            line += "1 "
+        elif ratio[1] > thres:
+            res.append((x, y, 1))
+            line += "2 "
+        elif ratio[2] > thres:
+            res.append((x, y, 2))
+            line += "3 "
+        else:
+            line += "0 "
+        if x == blocks_count_x - 1:
+            line = line.strip()
+    line += "\n"
+    return_str += line
 
-    cut_img = frame_pil  # .crop(cut_rect)
-    thres = 0.38
+drawn = draw_result_rectangles(frame, [255, 0, 0],
+                               [draw_rect])
 
-    res = []
-    return_str = ""
-    for y in range(blocks_count_y):
-        line = ""
-        for x in range(blocks_count_x):
-            blocks_img[x][y] = crop_block(cut_img, x, y)
-            ratio = analyze_block(blocks_img[x][y])
-            if ratio[0] > thres and ratio[1] > thres:
-                res.append((x, y, 3))
-                line += "4 "
-            elif ratio[0] > thres:
-                res.append((x, y, 0))
-                line += "1 "
-            elif ratio[1] > thres:
-                res.append((x, y, 1))
-                line += "2 "
-            elif ratio[2] > thres:
-                res.append((x, y, 2))
-                line += "3 "
-            else:
-                line += "0 "
-            if x == blocks_count_x - 1:
-                line = line.strip()
-        line += "\n"
-        return_str += line
+# show a frame
+cv2.imshow("capture", drawn)
 
-    drawn = draw_result_rectangles(frame, [255, 0, 0],
-                                   [draw_rect])
+draw = ImageDraw.Draw(cut_img)
 
-    # show a frame
-    cv2.imshow("capture", drawn)
+for block in res:
+    px = int(block[0] * block_width + block_width / 2)
+    py = int(block[1] * block_height + block_height / 2)
+    size = 2
+    # print(res)
+    if block[2] == 0:
+        draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'red')
+    if block[2] == 1:
+        draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'green')
+    if block[2] == 2:
+        draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'cyan')
+    if block[2] == 3:
+        draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'yellow')
 
-    draw = ImageDraw.Draw(cut_img)
+plt.imshow(cut_img)
+plt.show()
+print(return_str)
+# if cv2.waitKey(1) & 0xFF == ord('q'):
+# break
 
-    for block in res:
-        px = int(block[0] * block_width + block_width / 2)
-        py = int(block[1] * block_height + block_height / 2)
-        size = 2
-        # print(res)
-        if block[2] == 0:
-            draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'red')
-        if block[2] == 1:
-            draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'green')
-        if block[2] == 2:
-            draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'cyan')
-        if block[2] == 3:
-            draw.rectangle((px - size, py - size, px + size, py + size), 'white', 'yellow')
 
-    plt.imshow(cut_img)
-    plt.show()
-    print(return_str)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
 cap.release()
 cv2.destroyAllWindows()
