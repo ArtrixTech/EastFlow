@@ -39,16 +39,14 @@
 typedef enum
 {
   //接收ID
-  CAN_3508_M1_ID       = 0x200, //Edited 0->1
+  CAN_3508_M1_ID       = 0x201, //Edited 0->1
   CAN_3508_M2_ID       = 0x202,
   CAN_3508_M3_ID       = 0x203,
   CAN_3508_M4_ID       = 0x204,
   CAN_YAW_MOTOR_ID     = 0x205,
   CAN_PIT_MOTOR_ID     = 0x206, 
   CAN_TRIGGER_MOTOR_ID = 0x207,
-  CAN_test_moto_ID     = 0x208,
-	CAN_pitch_motor_ID     = 0x201,
-
+	CAN_GRIP_MOTOR_ID   = 0x208,
 	
   //发送ID
   CAN_CHASSIS_ID       = 0x200,
@@ -87,7 +85,7 @@ extern moto_measure_t moto_yaw;
 extern moto_measure_t moto_pit;
 extern moto_measure_t moto_trigger;
 extern moto_measure_t moto_test;
-extern moto_measure_t pitch_motor;
+extern moto_measure_t moto_grip;
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
@@ -125,6 +123,9 @@ void send_chassis_moto_zero_current(void);
   */
 void send_gimbal_moto_current(int16_t yaw_current, int16_t pit_current);
 void send_gimbal_moto_zero_current(void);
+
+void send_grip_moto_current(int16_t current[]);
+
 void set_test_motor_current(int16_t current_data[]);
 
 #endif
