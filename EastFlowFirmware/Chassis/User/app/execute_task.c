@@ -11,15 +11,22 @@
 mixed_pid m;
 int16_t current[4] = {0};
 
-const int STARTUP_INITIALIZE_DIST=10; // Unit: mm
-const int DIST_TO_DEG_RATIO=180; // Unit: degree
+// Unit: mm
+const int STARTUP_INITIALIZE_DIST=10; 
+
+// Unit: mm -> degree
+const int DIST_TO_DEG_RATIO=180; 
+
 const int REDUCTION_GEAR_RATIO=36;
 
-int dist_to_deg(int dist){	// Unit: mm
+
+// Unit: Input=mm | Output=degree
+int dist_to_deg(int dist){	
 	
 	return dist*DIST_TO_DEG_RATIO;
 	
 }
+
 
 int bias_angle(int target_angle){return target_angle+ dist_to_deg(STARTUP_INITIALIZE_DIST);}
 
@@ -40,7 +47,8 @@ void execute_task(const void *argu)
 			if (rc.sw1==RC_DN)anticipation=dist_to_deg(10);
 			if (rc.sw1==RC_UP)anticipation=dist_to_deg(-10);
 			
-			//anticipation=rc.ch2/660.0f*dist_to_deg(7);
+			// ONLY FOR DEBUG
+			// anticipation = rc.ch2 / 660.0f * dist_to_deg(7);
 
 			target_angle=bias_angle(anticipation*REDUCTION_GEAR_RATIO);
 			current[0]=	mixed_pid_calc(&m,moto_grip.total_angle,moto_grip.speed_rpm,target_angle);
