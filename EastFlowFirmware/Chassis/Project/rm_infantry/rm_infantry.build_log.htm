@@ -27,11 +27,15 @@ Project File Date:  07/25/2018
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'rm_infantry'
-compiling pid_param.c...
+compiling execute_task.c...
+..\User\app\execute_task.c(72): warning:  #111-D: statement is unreachable
+  			osDelay(5);
+..\User\app\execute_task.c: 1 warning, 1 error
+  }
 linking...
-Program Size: Code=45224 RO-data=1156 RW-data=448 ZI-data=24456  
+Program Size: Code=45260 RO-data=1152 RW-data=452 ZI-data=24452  
 FromELF: creating hex file...
-".\rm_infantry\rm_infantry.axf" - 0 Error(s), 0 Warning(s).
+".\rm_infantry\rm_infantry.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   E:\Proj\EastFlow\EastFlow\EastFlowFirmware\Chassis\Project\RTE

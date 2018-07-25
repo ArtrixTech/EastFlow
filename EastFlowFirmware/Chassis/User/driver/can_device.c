@@ -101,15 +101,17 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
     }
     break;
     case CAN_GRIP_MOTOR_ID:
-    {
+    {	/*
 			 moto_grip.msg_cnt++;
       moto_grip.msg_cnt <= 10 ? get_moto_offset(&moto_grip, data) : encoder_data_handle(&moto_grip, data);
       //err_detector_hook(TRIGGER_MOTO_OFFLINE);
 		
-			/*
-      pitch_motor.msg_cnt++ <= 50 ? get_moto_offset(&pitch_motor, data) : \
-      encoder_data_handle(&pitch_motor, data);
+		
+      moto_grip.msg_cnt++ <= 50 ? get_moto_offset(&moto_grip, data) : \
+      encoder_data_handle(&moto_grip, data);
       */
+			moto_grip.msg_cnt++;
+			moto_grip.msg_cnt <= 10 ? get_moto_offset(&moto_grip, data) : encoder_data_handle(&moto_grip, data);
     }
     break;
 		
