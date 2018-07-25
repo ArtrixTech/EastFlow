@@ -56,6 +56,9 @@ void execute_task(const void *argu)
 				
 				moto_grip.offset_ecd=0;*/
 			
+			// 问题具体现象是一开始就设置一个totalangle的话，电机会只转动一点点，之后totalangle的回传值就到了设定的值，实际电机的位置是没有达到的
+			// 初步怀疑是candevice.c的接收部分114行有问题，电机的ecd_offset应该是偏移值，但是我们设定的totalangle被当成了offset
+			
 			float anticipation=0;
 
 			if (rc.sw1==RC_DN)anticipation=dist_to_deg(4);
