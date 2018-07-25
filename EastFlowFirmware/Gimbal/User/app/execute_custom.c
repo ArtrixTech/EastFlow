@@ -23,17 +23,18 @@ void lift_moto_control()
     if (rc.kb.bit.Z)
         lift_moto_angle = 0;
     else if (rc.kb.bit.X)
-        lift_moto_angle = 30;
+        lift_moto_angle = 240;
     else if (rc.kb.bit.C)
-        lift_moto_angle = 60;
+        lift_moto_angle = 480;
     else if (rc.kb.bit.V)
-        lift_moto_angle = 90;
+        lift_moto_angle = 960;
 
     if (rc.kb.bit.W)
         lift_moto_angle += 30;
     else if (rc.kb.bit.S)
         lift_moto_angle -= 30;
 
+		lift_moto_angle = -rc.ch1 / RC_MAX_VALUE * 240;	
     lift_moto_speed = pid_calc(&pid_lift_speed, moto_chassis[0].total_angle / 19.2, lift_moto_angle);
     lift_moto_current[0] = pid_calc(&pid_lift_angle, moto_chassis[0].speed_rpm, lift_moto_speed);
 }
@@ -67,7 +68,7 @@ pid_t pid_pinch_angle;
 void pinch_moto_init()
 {
     pid_init(&pid_pinch_speed, 7000, 0, 10, 0, 0); // change this to adjust to 2006
-    pid_init(&pid_pinch_angle, 7000, 0, 100, 0, 0);
+    pid_init(&pid_pinch_angle, 7000, 0, 5, 0, 0);
 }
 
 void pinch_moto_control()

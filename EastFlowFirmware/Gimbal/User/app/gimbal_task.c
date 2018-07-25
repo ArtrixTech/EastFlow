@@ -64,6 +64,7 @@ uint32_t gimbal_time_last;
 int gimbal_time_ms;
 /* 执行云台功能任务的函数 */
 void gimbal_task(const void* argu)
+
 {
   //云台和拨弹电机参数初始化
   gimbal_init_param();
@@ -113,7 +114,7 @@ void gimbal_task(const void* argu)
     //云台控制，如果有模块离线，就切断云台电机输出
     if (gim.ctrl_mode != GIMBAL_RELAX                 //云台释放模式
         && !glb_err.err_list[REMOTE_CTRL_OFFLINE].err_exist //遥控器离线
-        && !glb_err.err_list[GIMBAL_YAW_OFFLINE].err_exist  //yaw轴电机离线
+        // && !glb_err.err_list[GIMBAL_YAW_OFFLINE].err_exist  //yaw轴电机离线
         && !glb_err.err_list[GIMBAL_PIT_OFFLINE].err_exist) //pitch轴电机离线
     {
       gimbal_custom_control();
