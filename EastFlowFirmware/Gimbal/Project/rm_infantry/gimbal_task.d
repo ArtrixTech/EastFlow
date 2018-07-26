@@ -62,3 +62,4 @@
 .\rm_infantry\gimbal_task.o: ..\Inc\os_inc\event_groups.h
 .\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\rm_infantry\gimbal_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\rm_infantry\gimbal_task.o: ..\User\app\execute_task.h

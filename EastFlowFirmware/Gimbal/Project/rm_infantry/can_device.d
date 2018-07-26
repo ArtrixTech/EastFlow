@@ -38,3 +38,4 @@
 .\rm_infantry\can_device.o: ..\Inc\hal_inc\stm32f4xx_hal_uart.h
 .\rm_infantry\can_device.o: ..\User\app\detect_task.h
 .\rm_infantry\can_device.o: ..\User\sys.h
+.\rm_infantry\can_device.o: ..\User\app\execute_task.h

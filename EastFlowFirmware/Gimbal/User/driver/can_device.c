@@ -219,6 +219,7 @@ void send_chassis_moto_zero_current(void)
   write_can(CHASSIS_CAN, CAN_CHASSIS_ID, data);
 }
 
+#include "execute_task.h"
 /**
   * @brief     发送云台电机电流数据到电调
   */
@@ -226,16 +227,16 @@ extern int16_t trigger_moto_current;
 void send_gimbal_moto_current(int16_t yaw_current, int16_t pit_current)
 {
   static uint8_t data[8];
-  int16_t trigger_current = trigger_moto_current;
+  // int16_t trigger_current = trigger_moto_current;
   
   data[0] = -yaw_current >> 8;
   data[1] = -yaw_current;
   data[2] = pit_current >> 8;
   data[3] = pit_current;
-  data[4] = trigger_current >> 8;
-  data[5] = trigger_current;
-  data[6] = 0;
-  data[7] = 0;
+  data[4] = lift_pinch_moto_current[1] >> 8;
+  data[5] = lift_pinch_moto_current[1];
+  data[6] = lift_pinch_moto_current[0] >> 8;
+  data[7] = lift_pinch_moto_current[0];
   
   write_can(GIMBAL_CAN, CAN_GIMBAL_ID, data);
 }

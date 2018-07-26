@@ -68,12 +68,19 @@ void gimbal_task(const void* argu)
 {
   //云台和拨弹电机参数初始化
   gimbal_init_param();
+	
+  /* lift_pinch_task */
+  #include "execute_task.h"
+  lift_moto_init();
+  pinch_moto_init();
+  /* lift_pinch_task */
   
   //从flash中读取云台中点位置
   read_gimbal_offset(&pit_center_offset, &yaw_center_offset);
   
   //云台控制任务循环
   uint32_t gimbal_wake_time = osKernelSysTick();
+	
   while (1)
   {
     gimbal_time_ms = HAL_GetTick() - gimbal_time_last;
@@ -110,6 +117,11 @@ void gimbal_task(const void* argu)
       default:
         break;
     }
+		
+		/* lift_pinch_task */
+    lift_moto_control();
+    pinch_moto_control();
+		/* lift_pinch_task */
 
     //云台控制，如果有模块离线，就切断云台电机输出
     if (gim.ctrl_mode != GIMBAL_RELAX                 //云台释放模式
@@ -126,9 +138,10 @@ void gimbal_task(const void* argu)
       pid_trigger.iout = 0;
       send_gimbal_moto_zero_current();
     }
-    
+    		
     //云台任务周期控制 5ms
     osDelayUntil(&gimbal_wake_time, GIMBAL_PERIOD);
+		osDelay(5);
   }
 }
 

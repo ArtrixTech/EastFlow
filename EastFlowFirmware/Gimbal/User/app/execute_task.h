@@ -7,23 +7,13 @@
 
 void execute_task(const void* argu);
 
-/* lift moto */
-extern int16_t lift_moto_current[1];
-
 void lift_moto_init(void);
 void lift_moto_control(void);
-
-void send_lift_moto_current(int16_t lift_moto_current[]);
-/* lift moto */
-
-/* pinch moto
-extern int16_t pinch_moto_current[1];
 
 void pinch_moto_init(void);
 void pinch_moto_control(void);
 
-void send_pinch_moto_current(int16_t pinch_moto_current[]);
- */
-/* pinch moto */
+extern int16_t lift_pinch_moto_current[2];
+void send_lift_pinch_moto_current(int16_t lift_moto_current[]);
 
 #endif

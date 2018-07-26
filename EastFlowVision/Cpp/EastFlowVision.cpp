@@ -7,15 +7,15 @@
 #include <opencv2/opencv.hpp>
 
 #define DEBUG true
-#define DEBUG_THRESHOLD false
+#define DEBUG_THRESHOLD true
 
 int map[8][8];
 
 int main()
 {
     cv::Mat image = cv::imread("Image.jpg");
-    // cv::namedWindow("Image", CV_WINDOW_NORMAL);
-    // cv::imshow("Image", image);
+    cv::namedWindow("Image", CV_WINDOW_NORMAL);
+    cv::imshow("Image", image);
 
     std::vector<cv::Mat> bgr;
     cv::split(image, bgr);
