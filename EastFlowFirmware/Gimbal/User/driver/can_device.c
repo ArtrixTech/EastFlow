@@ -40,6 +40,9 @@ moto_measure_t moto_trigger;
 /* 底盘电机 */
 moto_measure_t moto_chassis[4];
 
+/* 抬升电机 */
+moto_measure_t moto_lift;
+
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
   * @param     recv_id: CAN1 接收到的数据 ID
@@ -97,7 +100,11 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
       err_detector_hook(TRIGGER_MOTO_OFFLINE);
     }
     break;
-		
+		case CAN_LIFT_MOTOR_ID:
+		{
+			moto_lift.msg_cnt++ <= 50 ? get_moto_offset(&moto_lift, data) : \
+      encoder_data_handle(&moto_lift, data);
+		}
     default:
     {
     }
