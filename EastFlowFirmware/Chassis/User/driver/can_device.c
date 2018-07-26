@@ -168,12 +168,12 @@ static void encoder_data_handle(moto_measure_t *ptr, uint8_t data[])
 
   ptr->speed_rpm     = (int16_t)(data[2] << 8 | data[3]);
 
-  if (ptr->ecd - ptr->last_ecd > 4096)
+  if (ptr->ecd - ptr->last_ecd > 5000)
   {
     ptr->round_cnt--;
     ptr->ecd_raw_rate = ptr->ecd - ptr->last_ecd - 8192;
   }
-  else if (ptr->ecd - ptr->last_ecd < -4096)
+  else if (ptr->ecd - ptr->last_ecd < -5000)
   {
     ptr->round_cnt++;
     ptr->ecd_raw_rate = ptr->ecd - ptr->last_ecd + 8192;
