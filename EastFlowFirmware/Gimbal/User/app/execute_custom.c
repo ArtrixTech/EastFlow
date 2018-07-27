@@ -39,8 +39,8 @@ void lift_moto_control()
 
 void pinch_moto_init()
 {
-    pid_init(&pid_pinch_speed, 4000, 0, 10, 0, 0);
-    pid_init(&pid_pinch_angle, 8000, 0, 200, 0, 0);
+    pid_init(&pid_pinch_speed, 4000, 0, 25, 0, 0);
+    pid_init(&pid_pinch_angle, 8000, 0, 300, 0, 0);
 }
 
 void pinch_moto_control()

@@ -202,7 +202,7 @@
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>glb_cali_data</ItemText>
+          <ItemText>glb_cali_data,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
@@ -217,17 +217,12 @@
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>moto_trigger,0x0A</ItemText>
+          <ItemText>pid_pit,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>moto_trigger.total_angle / 36,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>6</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>pinch_moto_angle</ItemText>
+          <ItemText>pid_pit_speed,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
