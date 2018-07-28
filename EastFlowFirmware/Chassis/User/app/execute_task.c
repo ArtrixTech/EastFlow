@@ -20,15 +20,12 @@ const int MIN_DIST=0;
 const int DIST_TO_DEG_RATIO=180; 
 const int REDUCTION_GEAR_RATIO=36;
 
-
-
-
 // Unit: Input=mm | Output=degree(this angle is for the outer axis)
 int dist_to_deg(int dist){return dist*DIST_TO_DEG_RATIO;}
-int angle;
+
 int bias_angle(int target_angle){
 	// Distance limitation
-	 angle=target_angle+dist_to_deg(STARTUP_INITIALIZE_DIST)*REDUCTION_GEAR_RATIO;
+  int angle=target_angle+dist_to_deg(STARTUP_INITIALIZE_DIST)*REDUCTION_GEAR_RATIO;
 	if (angle>dist_to_deg(MAX_DIST)*REDUCTION_GEAR_RATIO)return dist_to_deg(MAX_DIST)*REDUCTION_GEAR_RATIO;
 	else if (angle<dist_to_deg(MIN_DIST)*REDUCTION_GEAR_RATIO)return dist_to_deg(MIN_DIST)*REDUCTION_GEAR_RATIO;
 	else return angle;

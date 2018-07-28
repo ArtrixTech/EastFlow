@@ -482,11 +482,6 @@
               <FileType>5</FileType>
               <FilePath>..\User\sys.h</FilePath>
             </File>
-            <File>
-              <FileName>test_custom.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\test_custom.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
