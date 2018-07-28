@@ -1,5 +1,5 @@
 Dependencies for Project 'rm_infantry', Target 'rm_infantry': (DO NOT MODIFY !)
-F (..\User\driver\can_device.c)(0x5B5A32F3)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\can_device.o --omf_browse .\rm_infantry\can_device.crf --depend .\rm_infantry\can_device.d)
+F (..\User\driver\can_device.c)(0x5B5B3A17)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\can_device.o --omf_browse .\rm_infantry\can_device.crf --depend .\rm_infantry\can_device.d)
 I (..\User\driver\can_device.h)(0x5B59DE3E)
 I (..\User\rm_hal_lib.h)(0x5B487A6C)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x59E0AE68)
@@ -291,7 +291,7 @@ I (..\Inc\os_inc\event_groups.h)(0x59E0AE6A)
 I (..\User\driver\uart_device.h)(0x5B570F29)
 I (..\User\driver\calibrate.h)(0x5A61C24A)
 I (..\User\sys.h)(0x5A7337D0)
-F (..\User\app\gimbal_task.c)(0x5B5A3357)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\gimbal_task.o --omf_browse .\rm_infantry\gimbal_task.crf --depend .\rm_infantry\gimbal_task.d)
+F (..\User\app\gimbal_task.c)(0x5B5B5BA8)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\gimbal_task.o --omf_browse .\rm_infantry\gimbal_task.crf --depend .\rm_infantry\gimbal_task.d)
 I (..\User\app\gimbal_task.h)(0x5A741158)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x59E0AE68)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5A61AD8C)
@@ -573,7 +573,7 @@ I (..\User\sys.h)(0x5A7337D0)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x56FE42D6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-F (..\User\app\gimbal_custom.c)(0x5A74125C)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\gimbal_custom.o --omf_browse .\rm_infantry\gimbal_custom.crf --depend .\rm_infantry\gimbal_custom.d)
+F (..\User\app\gimbal_custom.c)(0x5B5B3E3D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\gimbal_custom.o --omf_browse .\rm_infantry\gimbal_custom.crf --depend .\rm_infantry\gimbal_custom.d)
 I (..\User\app\gimbal_task.h)(0x5A741158)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x59E0AE68)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5A61AD8C)
@@ -655,7 +655,7 @@ I (..\User\driver\can_device.h)(0x5B59DE3E)
 I (..\User\algorithm\pid.h)(0x5B56A6A0)
 I (..\User\sys.h)(0x5A7337D0)
 F (..\User\sys.h)(0x5A7337D0)()
-F (..\User\app\execute_custom.c)(0x5B5A3104)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\execute_custom.o --omf_browse .\rm_infantry\execute_custom.crf --depend .\rm_infantry\execute_custom.d)
+F (..\User\app\execute_custom.c)(0x5B5B4232)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I C:\Users\14121\Documents\GitHub\EastFlow\EastFlowFirmware\Gimbal\Project\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\execute_custom.o --omf_browse .\rm_infantry\execute_custom.crf --depend .\rm_infantry\execute_custom.d)
 I (..\User\driver\can_device.h)(0x5B59DE3E)
 I (..\User\rm_hal_lib.h)(0x5B487A6C)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x59E0AE68)
