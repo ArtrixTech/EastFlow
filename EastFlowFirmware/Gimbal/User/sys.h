@@ -107,9 +107,9 @@
 
 /********** 4轮底盘信息 **********/
 /* 底盘轮距(mm) */
-#define WHEELTRACK     320
+#define WHEELTRACK     330
 /* 底盘轴距(mm) */
-#define WHEELBASE      320
+#define WHEELBASE      330
 /* 云台偏移(mm) */
 #define GIMBAL_OFFSET  0
 
