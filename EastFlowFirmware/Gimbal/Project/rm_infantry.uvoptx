@@ -197,32 +197,47 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>moto_chassis[0],0x0A</ItemText>
+          <ItemText>glb_cali_data,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>glb_cali_data,0x0A</ItemText>
+          <ItemText>rc,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>rc.wheel,0x0A</ItemText>
+          <ItemText>lift_moto_angle</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>rc,0x0A</ItemText>
+          <ItemText>pinch_moto_angle,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>pid_pit,0x0A</ItemText>
+          <ItemText>pid_pinch_speed,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>pid_pit_speed,0x0A</ItemText>
+          <ItemText>pid_pinch_angle,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>pid_lift_angle</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>\\rm_infantry\../User/app/execute_custom.c\lift_moto_angle</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>\\rm_infantry\../User/driver/calibrate.c\glb_cali_data.gimbal_cali_data.cali_cmd</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

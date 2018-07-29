@@ -120,7 +120,8 @@ void get_chassis_mode(void)
   switch (rc.sw2)
   {
     case RC_UP:
-      chassis.mode = CHASSIS_FOLLOW_GIMBAL;
+      //chassis.mode = CHASSIS_FOLLOW_GIMBAL;
+			chassis.mode = CHASSIS_OPEN_LOOP;
     break;
     
     case RC_MI:
