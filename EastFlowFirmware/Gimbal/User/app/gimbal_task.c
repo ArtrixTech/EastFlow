@@ -73,6 +73,7 @@ void gimbal_task(const void* argu)
   #include "execute_task.h"
   lift_moto_init();
   pinch_moto_init();
+	write_led_io(LASER_IO, LED_ON);
   /* lift_pinch_task */
   
   //从flash中读取云台中点位置

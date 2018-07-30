@@ -27,13 +27,13 @@ void lift_moto_init()
 void lift_moto_control()
 {
     if (rc.kb.bit.Z/* || rc.sw1 == RC_DN*/)
-        lift_moto_angle = 50;
+        lift_moto_angle = 85;
     else if (rc.kb.bit.X /*|| rc.sw1 == RC_MI*/)
-        lift_moto_angle = 350;
+        lift_moto_angle = 330;
     else if (rc.kb.bit.C /*|| rc.sw1 == RC_UP*/)
-        lift_moto_angle = 550;
+        lift_moto_angle = 580;
 		else if (rc.kb.bit.V)
-			  lift_moto_angle = 850;
+			  lift_moto_angle = 860;
 
     lift_moto_speed = pid_calc(&pid_lift_angle,moto_lift.total_angle / 19.2, lift_moto_angle);
     lift_pinch_moto_current[0] = pid_calc(&pid_lift_speed, moto_lift.speed_rpm, lift_moto_speed);
@@ -42,7 +42,7 @@ void lift_moto_control()
 void pinch_moto_init()
 {
     pid_init(&pid_pinch_speed, 20000, 0, 2, 0, 0);
-    pid_init(&pid_pinch_angle, 30000, 0, 20, 0, 0);
+    pid_init(&pid_pinch_angle, 30000, 0, 15, 0, 0);
 }
 
 void pinch_moto_control()
@@ -50,7 +50,7 @@ void pinch_moto_control()
     if (rc.kb.bit.Q) {
         pinch_moto_angle = 0;
     } else if (rc.kb.bit.E) {
-        pinch_moto_angle = -4400;
+        pinch_moto_angle = -3900;
     }
 		
     pinch_moto_speed = pid_calc(&pid_pinch_angle, moto_trigger.total_angle / 36, pinch_moto_angle);

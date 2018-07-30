@@ -214,31 +214,6 @@
           <WinNumber>1</WinNumber>
           <ItemText>pinch_moto_angle,0x0A</ItemText>
         </Ww>
-        <Ww>
-          <count>4</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>pid_pinch_speed,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>5</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>pid_pinch_angle,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>6</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>pid_lift_angle</ItemText>
-        </Ww>
-        <Ww>
-          <count>7</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>\\rm_infantry\../User/app/execute_custom.c\lift_moto_angle</ItemText>
-        </Ww>
-        <Ww>
-          <count>8</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>\\rm_infantry\../User/driver/calibrate.c\glb_cali_data.gimbal_cali_data.cali_cmd</ItemText>
-        </Ww>
       </WatchWindow1>
       <WatchWindow2>
         <Ww>
